@@ -21,8 +21,13 @@ public slots:
     void openFile();
     void saveFile();
     void insertTextMarker(const QString &style = "normal");
-    void insertVideoMarker(const QString &description = "");
+    void insertAnimationMarker(const QString &note ="");
+    void insertVideoMarker(const QString &note = "");
+    void insertImageMarker(const QString &note = "");
     void insertAudioMarker(const QString &note = "");
+    void insertGifMarker(const QString &note = "");
+    void insertEffectsMarcker(const QString &note = "");
+    void insertNoteMarker(const QString &note = "");
 
 private:
     QTextEdit* pTextEdit;
