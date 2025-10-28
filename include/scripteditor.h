@@ -17,30 +17,35 @@ public:
     ~ScriptEditor();
 
 public slots:
-    void newFile();
-    void openFile();
-    void saveFile();
-    void insertTextMarker(const QString &style = "normal");
-    void insertAnimationMarker(const QString &note ="");
-    void insertVideoMarker(const QString &note = "");
-    void insertImageMarker(const QString &note = "");
-    void insertAudioMarker(const QString &note = "");
-    void insertGifMarker(const QString &note = "");
-    void insertEffectsMarcker(const QString &note = "");
-    void insertNoteMarker(const QString &note = "");
+    void NewFile();
+    void OpenFile();
+    void SaveFile();
+    void InsertTextMarker(const QString &style = "normal");
+    void InsertAnimationMarker(const QString &note ="");
+    void InsertEffectsMarcker(const QString &note = "");
+    void InsertVideoMarker(const QString &note = "");
+    void InsertImageMarker(const QString &note = "");
+    void InsertAudioMarker(const QString &note = "");
+    void InsertNoteMarker(const QString &note = "");
+    void InsertGifMarker(const QString &note = "");
 
 private:
-    QTextEdit* pTextEdit;
     QToolBar* pMainToolBar;
-    QMenu* pFileMenu;
+    QTextEdit* pTextEdit;
     QMenu* pInsertMenu;
+    QMenu* pFileMenu;
 
-    QAction* pNewFileAction;
-    QAction* pOpenFileAction;
-    QAction* pSaveFileAction;
-    QAction* pTextMarkerAction;
+    QAction* pAnimationMarkerAction;
+    QAction* pEffectMarkerAction;
     QAction* pVideoMarkerAction;
     QAction* pAudioMarkerAction;
+    QAction* pImageMarkerAction;
+    QAction* pTextMarkerAction;
+    QAction* pNoteMarkerAction;
+    QAction* pGifMarkerAction;
+    QAction* pOpenFileAction;
+    QAction* pSaveFileAction;
+    QAction* pNewFileAction;
 
     QMap<QString, QTextCharFormat> textFormats;
 
