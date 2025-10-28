@@ -1,5 +1,6 @@
 #include "scripteditor.h"
 #include <QApplication>
+#include <QMenuBar>
 
 
 ScriptEditor::ScriptEditor(QWidget *parent) : QMainWindow(parent)
@@ -98,4 +99,24 @@ void ScriptEditor::CreateActions()
     connect(pOpenFileAction, &QAction::triggered, this, &ScriptEditor::OpenFile);
     connect(pSaveFileAction, &QAction::triggered, this, &ScriptEditor::SaveFile);
     connect(pNewFileAction, &QAction::triggered, this, &ScriptEditor::NewFile);
+}
+
+void ScriptEditor::CreateMenus()
+{
+    QMenuBar *pMenuBar = this->menuBar();
+
+    pFileMenu = pMenuBar->addMenu("&File");
+    pFileMenu->addAction(pNewFileAction);
+    pFileMenu->addAction(pOpenFileAction);
+    pFileMenu->addAction(pSaveFileAction);
+
+    pInsertMenu = pMenuBar->addMenu(("&Edit"));
+    pInsertMenu->addAction(pAnimationMarkerAction);
+    pInsertMenu->addAction(pEffectMarkerAction);
+    pInsertMenu->addAction(pVideoMarkerAction);
+    pInsertMenu->addAction(pImageMarkerAction);
+    pInsertMenu->addAction(pAudioMarkerAction);
+    pInsertMenu->addAction(pTextMarkerAction);
+    pInsertMenu->addAction(pNoteMarkerAction);
+    pInsertMenu->addAction(pGifMarkerAction);
 }
