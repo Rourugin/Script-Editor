@@ -61,6 +61,11 @@ void ScriptEditor::SetupFormatting()
     NoteFormat.setBackground(QColor(128, 128, 128));
     NoteFormat.setFontItalic(true);
     textFormats["note"] = NoteFormat;
+    
+    //text
+    QTextCharFormat TextFormat;
+    TextFormat.setBackground(QColor());
+    textForma
 }
 
 void ScriptEditor::CreateActions()
