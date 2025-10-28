@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nakss_mef/script-editor/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

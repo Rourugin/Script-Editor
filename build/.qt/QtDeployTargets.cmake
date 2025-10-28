@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ScriptEditor_FILE /home/nakss_mef/script-editor/build/ScriptEditor)
+set(__QT_DEPLOY_TARGET_ScriptEditor_TYPE EXECUTABLE)

@@ -1,10 +1,14 @@
 #ifndef SCRIPTEDITOR_H
 #define SCRIPTEDITOR_H
 
+#include <QApplication>
 #include <QMainWindow>
+#include <QStatusBar>
 #include <QTextEdit>
 #include <QToolBar>
+#include <QMenuBar>
 #include <QAction>
+#include <QStack>
 #include <QMenu>
 
 
@@ -20,14 +24,15 @@ public slots:
     void NewFile();
     void OpenFile();
     void SaveFile();
-    void InsertTextMarker(const QString &style = "normal");
-    void InsertAnimationMarker(const QString &note ="");
-    void InsertEffectsMarcker(const QString &note = "");
-    void InsertVideoMarker(const QString &note = "");
-    void InsertImageMarker(const QString &note = "");
-    void InsertAudioMarker(const QString &note = "");
-    void InsertNoteMarker(const QString &note = "");
-    void InsertGifMarker(const QString &note = "");
+    void OnTextChanged();
+    void InsertTextMarker();
+    void InsertAnimationMarker();
+    void InsertEffectsMarcker();
+    void InsertVideoMarker();
+    void InsertImageMarker();
+    void InsertAudioMarker();
+    void InsertNoteMarker();
+    void InsertGifMarker();
 
 private:
     QToolBar* pMainToolBar;
@@ -48,12 +53,13 @@ private:
     QAction* pNewFileAction;
 
     QMap<QString, QTextCharFormat> textFormats;
+    QStack<QString> openTags;
 
     void SetupUI();
     void SetupFormatting();
     void CreateActions();
     void CreateMenus();
-
+    void CheckNestingLevel();
 
 };
 

@@ -1,14 +1,15 @@
 #include "scripteditor.h"
-#include <QApplication>
-#include <QMenuBar>
 
 
 ScriptEditor::ScriptEditor(QWidget *parent) : QMainWindow(parent)
 {
+    menuBar()->setNativeMenuBar(false);
+
     SetupUI();
     SetupFormatting();
     CreateActions();
     CreateMenus();
+    CheckNestingLevel();
 }
 
 ScriptEditor::~ScriptEditor() {}
@@ -18,7 +19,7 @@ void ScriptEditor::SetupUI()
     pTextEdit = new QTextEdit(this);
     setCentralWidget(pTextEdit);
     setWindowTitle("Script Editor");
-    resize(1920, 1080);
+    resize(800, 600);
 }
 
 void ScriptEditor::SetupFormatting()
@@ -96,6 +97,7 @@ void ScriptEditor::CreateActions()
     connect(pTextMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertTextMarker);
     connect(pNoteMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertNoteMarker);
     connect(pGifMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertGifMarker);
+    connect(pTextEdit, &QTextEdit::textChanged, this, &ScriptEditor::OnTextChanged);
     connect(pOpenFileAction, &QAction::triggered, this, &ScriptEditor::OpenFile);
     connect(pSaveFileAction, &QAction::triggered, this, &ScriptEditor::SaveFile);
     connect(pNewFileAction, &QAction::triggered, this, &ScriptEditor::NewFile);
@@ -103,6 +105,7 @@ void ScriptEditor::CreateActions()
 
 void ScriptEditor::CreateMenus()
 {
+    qDebug() << "CreateMenus called";
     QMenuBar *pMenuBar = this->menuBar();
 
     pFileMenu = pMenuBar->addMenu("&File");
@@ -119,4 +122,108 @@ void ScriptEditor::CreateMenus()
     pInsertMenu->addAction(pTextMarkerAction);
     pInsertMenu->addAction(pNoteMarkerAction);
     pInsertMenu->addAction(pGifMarkerAction);
+}
+
+void ScriptEditor::CheckNestingLevel()
+{
+    if (openTags.isEmpty())
+    {
+        statusBar()->showMessage("General");
+        return;
+    }
+
+    QString nestingPath;
+    for (int i = 0; i < openTags.size(); ++i)
+    {
+        if (i > 0) nestingPath += "->";
+
+        QString tag = openTags.at(i);
+        QString displayName;
+
+        if (tag == "animation") displayName = "Animation";
+        else if (tag == "video") displayName = "Video";
+        else if (tag == "image") displayName = "Image";
+        else if (tag == "audio") displayName = "Audio";
+        else if (tag == "gif") displayName = "GIF";
+        else if (tag == "effect") displayName = "Effect";
+        else if (tag == "note") displayName = "Note";
+
+        nestingPath += displayName;
+    }
+
+    statusBar()->showMessage(nestingPath);
+}
+
+void ScriptEditor::NewFile()
+{
+    //code
+}
+
+void ScriptEditor::OpenFile()
+{
+    //code
+}
+
+void ScriptEditor::SaveFile()
+{
+    //code
+}
+
+void ScriptEditor::OnTextChanged()
+{
+    QTextCursor cursor = pTextEdit->textCursor();
+    QString currentText = pTextEdit->toPlainText();
+    int cursorPos = cursor.position();
+
+    if (cursorPos > 0 && currentText.length() >= cursorPos)
+    {
+        QChar lastChar = currentText.at(cursorPos - 1);
+
+        if (lastChar == ']' && !openTags.isEmpty())
+        {
+            QString lastTag = openTags.pop();
+            pTextEdit->setFocus();
+        }
+    }
+    CheckNestingLevel();
+}
+
+void ScriptEditor::InsertTextMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertAnimationMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertEffectsMarcker()
+{
+    //code
+}
+
+void ScriptEditor::InsertVideoMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertImageMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertAudioMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertNoteMarker()
+{
+    //code
+}
+
+void ScriptEditor::InsertGifMarker()
+{
+    //code
 }

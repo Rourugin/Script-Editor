@@ -1,0 +1,5 @@
+/home/nakss_mef/script-editor/build/CMakeFiles/ScriptEditor.dir
+/home/nakss_mef/script-editor/build/CMakeFiles/edit_cache.dir
+/home/nakss_mef/script-editor/build/CMakeFiles/rebuild_cache.dir
+/home/nakss_mef/script-editor/build/CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir
+/home/nakss_mef/script-editor/build/CMakeFiles/ScriptEditor_autogen.dir
