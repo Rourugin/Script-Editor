@@ -3,6 +3,8 @@
 
 #include <QApplication>
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QMessageBox>
 #include <QStatusBar>
 #include <QTextEdit>
 #include <QToolBar>
@@ -24,6 +26,7 @@ public slots:
     void NewFile();
     void OpenFile();
     void SaveFile();
+    void SaveAsFile();
     void OnTextChanged();
     void InsertTextMarker();
     void InsertAnimationMarker();
@@ -47,6 +50,7 @@ private:
     QAction* pImageMarkerAction;
     QAction* pTextMarkerAction;
     QAction* pNoteMarkerAction;
+    QAction* pSaveAsFileAction;
     QAction* pGifMarkerAction;
     QAction* pOpenFileAction;
     QAction* pSaveFileAction;
@@ -54,12 +58,14 @@ private:
 
     QMap<QString, QTextCharFormat> textFormats;
     QStack<QString> openTags;
+    QString currentFilePath;
 
     void SetupUI();
     void SetupFormatting();
     void CreateActions();
     void CreateMenus();
     void CheckNestingLevel();
+    bool SaveToFile(const QString& filePath);
 
 };
 

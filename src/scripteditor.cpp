@@ -61,6 +61,11 @@ void ScriptEditor::SetupFormatting()
     NoteFormat.setBackground(QColor(128, 128, 128));
     NoteFormat.setFontItalic(true);
     textFormats["note"] = NoteFormat;
+    
+    //text
+    QTextCharFormat TextFormat;
+    TextFormat.setBackground(QColor());
+    textFormats["text"] = TextFormat;
 }
 
 void ScriptEditor::CreateActions()
@@ -70,12 +75,13 @@ void ScriptEditor::CreateActions()
     pVideoMarkerAction = new QAction("&video", this);
     pAudioMarkerAction = new QAction("&audio", this);
     pImageMarkerAction = new QAction("&image", this);
+    pSaveAsFileAction = new QAction("&saveAs", this);
     pTextMarkerAction = new QAction("&Text", this);
     pNoteMarkerAction = new QAction("&note", this);
     pGifMarkerAction = new QAction("&gif", this);
-    pOpenFileAction = new QAction("&Open", this);
-    pSaveFileAction = new QAction("&Save", this);
-    pNewFileAction = new QAction("&New", this);
+    pOpenFileAction = new QAction("&open", this);
+    pSaveFileAction = new QAction("&save", this);
+    pNewFileAction = new QAction("&new", this);
 
     pAnimationMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_D));
     pEffectMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_F));
@@ -84,9 +90,10 @@ void ScriptEditor::CreateActions()
     pImageMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_Z));
     pTextMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_C));
     pNoteMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_X));
-    pGifMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_S));
+    pGifMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_W));
+    pSaveFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_S));
+    pSaveAsFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_S));
     pOpenFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_A));
-    pSaveFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_S));
     pNewFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_A));
 
     connect(pAnimationMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertAnimationMarker);
@@ -96,7 +103,9 @@ void ScriptEditor::CreateActions()
     connect(pImageMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertImageMarker);
     connect(pTextMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertTextMarker);
     connect(pNoteMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertNoteMarker);
+    connect(pTextEdit, &QTextEdit::textChanged, this, [this](){setWindowModified(true);});
     connect(pGifMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertGifMarker);
+    connect(pSaveAsFileAction, &QAction::triggered, this, &ScriptEditor::SaveAsFile);
     connect(pTextEdit, &QTextEdit::textChanged, this, &ScriptEditor::OnTextChanged);
     connect(pOpenFileAction, &QAction::triggered, this, &ScriptEditor::OpenFile);
     connect(pSaveFileAction, &QAction::triggered, this, &ScriptEditor::SaveFile);
@@ -112,6 +121,7 @@ void ScriptEditor::CreateMenus()
     pFileMenu->addAction(pNewFileAction);
     pFileMenu->addAction(pOpenFileAction);
     pFileMenu->addAction(pSaveFileAction);
+    pFileMenu->addAction(pSaveAsFileAction);
 
     pInsertMenu = pMenuBar->addMenu(("&Edit"));
     pInsertMenu->addAction(pAnimationMarkerAction);
@@ -126,7 +136,7 @@ void ScriptEditor::CreateMenus()
 
 void ScriptEditor::CheckNestingLevel()
 {
-    if (openTags.isEmpty())
+    if (openTags.isEmpty() == true)
     {
         statusBar()->showMessage("General");
         return;
@@ -164,9 +174,43 @@ void ScriptEditor::OpenFile()
     //code
 }
 
+bool ScriptEditor::SaveToFile(const QString& filePath)
+{
+    QFile file(filePath);
+    if (file.open(QIODevice::WriteOnly) == false)
+    {
+        QMessageBox::warning(this, "Error", "Cannot save file: " + file.errorString());
+        return false;
+    }
+
+    file.write(pTextEdit->toPlainText().toUtf8());
+    file.close();
+    currentFilePath = filePath;
+    setWindowModified(false);
+    setWindowTitle("Script Editor - " + QFileInfo(filePath).fileName());
+
+    return true;
+}
+
 void ScriptEditor::SaveFile()
 {
-    //code
+    if (currentFilePath.isEmpty() == true)
+    {
+        SaveAsFile();
+    }
+    else if (currentFilePath.isEmpty() == false)
+    {
+        SaveToFile(currentFilePath);
+    }
+}
+
+void ScriptEditor::SaveAsFile()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, "Save as");
+    if (fileName.isEmpty() == false)
+    {
+        SaveToFile(fileName);
+    }
 }
 
 void ScriptEditor::OnTextChanged()
@@ -179,7 +223,7 @@ void ScriptEditor::OnTextChanged()
     {
         QChar lastChar = currentText.at(cursorPos - 1);
 
-        if (lastChar == ']' && !openTags.isEmpty())
+        if (lastChar == ']' && openTags.isEmpty() == false)
         {
             QString lastTag = openTags.pop();
             pTextEdit->setFocus();
@@ -190,7 +234,13 @@ void ScriptEditor::OnTextChanged()
 
 void ScriptEditor::InsertTextMarker()
 {
-    //code
+    QString tag = "text";
+    QTextCursor cursor = pTextEdit->textCursor();
+
+    cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    openTags.push(tag);
+    cursor.insertText("]", textFormats[tag]);
+    CheckNestingLevel();
 }
 
 void ScriptEditor::InsertAnimationMarker()
