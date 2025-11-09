@@ -66,6 +66,8 @@ private:
     void CreateMenus();
     void CheckNestingLevel();
     bool SaveToFile(const QString& filePath);
+    bool LoadFromFile(const QString& filePath);
+    bool AskSave();
 
 };
 

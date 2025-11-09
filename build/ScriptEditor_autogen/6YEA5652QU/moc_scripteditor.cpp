@@ -44,6 +44,8 @@ template <> constexpr inline auto ScriptEditor::qt_create_metaobjectdata<qt_meta
         "",
         "OpenFile",
         "SaveFile",
+        "SaveAsFile",
+        "OnTextChanged",
         "InsertTextMarker",
         "InsertAnimationMarker",
         "InsertEffectsMarcker",
@@ -51,7 +53,8 @@ template <> constexpr inline auto ScriptEditor::qt_create_metaobjectdata<qt_meta
         "InsertImageMarker",
         "InsertAudioMarker",
         "InsertNoteMarker",
-        "InsertGifMarker"
+        "InsertGifMarker",
+        "CloseCurrentTag"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -61,22 +64,28 @@ template <> constexpr inline auto ScriptEditor::qt_create_metaobjectdata<qt_meta
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'SaveFile'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertTextMarker'
+        // Slot 'SaveAsFile'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertAnimationMarker'
+        // Slot 'OnTextChanged'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertEffectsMarcker'
+        // Slot 'InsertTextMarker'
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertVideoMarker'
+        // Slot 'InsertAnimationMarker'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertImageMarker'
+        // Slot 'InsertEffectsMarcker'
         QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertAudioMarker'
+        // Slot 'InsertVideoMarker'
         QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertNoteMarker'
+        // Slot 'InsertImageMarker'
         QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'InsertGifMarker'
+        // Slot 'InsertAudioMarker'
         QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'InsertNoteMarker'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'InsertGifMarker'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'CloseCurrentTag'
+        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -103,14 +112,17 @@ void ScriptEditor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 0: _t->NewFile(); break;
         case 1: _t->OpenFile(); break;
         case 2: _t->SaveFile(); break;
-        case 3: _t->InsertTextMarker(); break;
-        case 4: _t->InsertAnimationMarker(); break;
-        case 5: _t->InsertEffectsMarcker(); break;
-        case 6: _t->InsertVideoMarker(); break;
-        case 7: _t->InsertImageMarker(); break;
-        case 8: _t->InsertAudioMarker(); break;
-        case 9: _t->InsertNoteMarker(); break;
-        case 10: _t->InsertGifMarker(); break;
+        case 3: _t->SaveAsFile(); break;
+        case 4: _t->OnTextChanged(); break;
+        case 5: _t->InsertTextMarker(); break;
+        case 6: _t->InsertAnimationMarker(); break;
+        case 7: _t->InsertEffectsMarcker(); break;
+        case 8: _t->InsertVideoMarker(); break;
+        case 9: _t->InsertImageMarker(); break;
+        case 10: _t->InsertAudioMarker(); break;
+        case 11: _t->InsertNoteMarker(); break;
+        case 12: _t->InsertGifMarker(); break;
+        case 13: _t->CloseCurrentTag(); break;
         default: ;
         }
     }
@@ -136,14 +148,14 @@ int ScriptEditor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 14;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 14;
     }
     return _id;
 }

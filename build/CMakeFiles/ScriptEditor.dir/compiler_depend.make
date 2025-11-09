@@ -135,6 +135,10 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
   /usr/include/c++/15.2.1/bits/formatfwd.h \
+  /usr/include/c++/15.2.1/bits/fs_dir.h \
+  /usr/include/c++/15.2.1/bits/fs_fwd.h \
+  /usr/include/c++/15.2.1/bits/fs_ops.h \
+  /usr/include/c++/15.2.1/bits/fs_path.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -232,6 +236,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
+  /usr/include/c++/15.2.1/codecvt \
   /usr/include/c++/15.2.1/compare \
   /usr/include/c++/15.2.1/concepts \
   /usr/include/c++/15.2.1/cstddef \
@@ -252,6 +257,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/filesystem \
   /usr/include/c++/15.2.1/format \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
@@ -339,6 +345,12 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QList \
+  /usr/include/qt6/QtCore/QObject \
+  /usr/include/qt6/QtCore/QRect \
+  /usr/include/qt6/QtCore/QSize \
+  /usr/include/qt6/QtCore/QSizeF \
+  /usr/include/qt6/QtCore/QStack \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20algorithm.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -348,6 +360,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/q20utility.h \
   /usr/include/qt6/QtCore/q23type_traits.h \
   /usr/include/qt6/QtCore/q23utility.h \
+  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/qt6/QtCore/qalgorithms.h \
   /usr/include/qt6/QtCore/qalloc.h \
   /usr/include/qt6/QtCore/qanystringview.h \
@@ -358,11 +371,13 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qatomic.h \
   /usr/include/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/qt6/QtCore/qbasicatomic.h \
+  /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcheckedint_impl.h \
   /usr/include/qt6/QtCore/qcompare.h \
@@ -375,11 +390,22 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qcontainerinfo.h \
   /usr/include/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/qt6/QtCore/qcontiguouscache.h \
+  /usr/include/qt6/QtCore/qcoreapplication.h \
+  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+  /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
+  /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
+  /usr/include/qt6/QtCore/qdirlisting.h \
   /usr/include/qt6/QtCore/qendian.h \
+  /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -390,12 +416,14 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qglobalstatic.h \
   /usr/include/qt6/QtCore/qhash.h \
   /usr/include/qt6/QtCore/qhashfunctions.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qiterable.h \
   /usr/include/qt6/QtCore/qiterator.h \
   /usr/include/qt6/QtCore/qlatin1stringview.h \
   /usr/include/qt6/QtCore/qline.h \
   /usr/include/qt6/QtCore/qlist.h \
+  /usr/include/qt6/QtCore/qlocale.h \
   /usr/include/qt6/QtCore/qlogging.h \
   /usr/include/qt6/QtCore/qmalloc.h \
   /usr/include/qt6/QtCore/qmap.h \
@@ -405,6 +433,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qmetatype.h \
   /usr/include/qt6/QtCore/qminmax.h \
   /usr/include/qt6/QtCore/qnamespace.h \
+  /usr/include/qt6/QtCore/qnativeinterface.h \
   /usr/include/qt6/QtCore/qnumeric.h \
   /usr/include/qt6/QtCore/qobject.h \
   /usr/include/qt6/QtCore/qobject_impl.h \
@@ -425,6 +454,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/qt6/QtCore/qsize.h \
   /usr/include/qt6/QtCore/qspan.h \
+  /usr/include/qt6/QtCore/qstack.h \
   /usr/include/qt6/QtCore/qstdlibdetection.h \
   /usr/include/qt6/QtCore/qstring.h \
   /usr/include/qt6/QtCore/qstringalgorithms.h \
@@ -452,6 +482,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtmocconstants.h \
   /usr/include/qt6/QtCore/qtmochelpers.h \
@@ -472,27 +503,40 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QAction \
+  /usr/include/qt6/QtGui/QShortcut \
+  /usr/include/qt6/QtGui/QShowEvent \
+  /usr/include/qt6/QtGui/QTransform \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qbrush.h \
   /usr/include/qt6/QtGui/qcolor.h \
   /usr/include/qt6/QtGui/qcursor.h \
+  /usr/include/qt6/QtGui/qevent.h \
+  /usr/include/qt6/QtGui/qeventpoint.h \
   /usr/include/qt6/QtGui/qfont.h \
   /usr/include/qt6/QtGui/qfontinfo.h \
   /usr/include/qt6/QtGui/qfontmetrics.h \
   /usr/include/qt6/QtGui/qfontvariableaxis.h \
+  /usr/include/qt6/QtGui/qguiapplication.h \
+  /usr/include/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/qt6/QtGui/qicon.h \
   /usr/include/qt6/QtGui/qimage.h \
+  /usr/include/qt6/QtGui/qinputdevice.h \
+  /usr/include/qt6/QtGui/qinputmethod.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
   /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
+  /usr/include/qt6/QtGui/qpointingdevice.h \
   /usr/include/qt6/QtGui/qpolygon.h \
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qscreen.h \
+  /usr/include/qt6/QtGui/qscreen_platform.h \
+  /usr/include/qt6/QtGui/qshortcut.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtGui/qtextformat.h \
@@ -501,16 +545,30 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o: ScriptE
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
   /usr/include/qt6/QtGui/qtransform.h \
+  /usr/include/qt6/QtGui/qvector2d.h \
+  /usr/include/qt6/QtGui/qvectornd.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
+  /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QMenu \
+  /usr/include/qt6/QtWidgets/QMenuBar \
+  /usr/include/qt6/QtWidgets/QMessageBox \
+  /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/QTextEdit \
   /usr/include/qt6/QtWidgets/QToolBar \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
   /usr/include/qt6/QtWidgets/qmenu.h \
+  /usr/include/qt6/QtWidgets/qmenubar.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/qt6/QtWidgets/qstatusbar.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
   /usr/include/qt6/QtWidgets/qtextedit.h \
   /usr/include/qt6/QtWidgets/qtoolbar.h \
@@ -675,6 +733,10 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
   /usr/include/c++/15.2.1/bits/formatfwd.h \
+  /usr/include/c++/15.2.1/bits/fs_dir.h \
+  /usr/include/c++/15.2.1/bits/fs_fwd.h \
+  /usr/include/c++/15.2.1/bits/fs_ops.h \
+  /usr/include/c++/15.2.1/bits/fs_path.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -772,6 +834,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
+  /usr/include/c++/15.2.1/codecvt \
   /usr/include/c++/15.2.1/compare \
   /usr/include/c++/15.2.1/concepts \
   /usr/include/c++/15.2.1/cstddef \
@@ -792,6 +855,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/filesystem \
   /usr/include/c++/15.2.1/format \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
@@ -879,6 +943,12 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QList \
+  /usr/include/qt6/QtCore/QObject \
+  /usr/include/qt6/QtCore/QRect \
+  /usr/include/qt6/QtCore/QSize \
+  /usr/include/qt6/QtCore/QSizeF \
+  /usr/include/qt6/QtCore/QStack \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20iterator.h \
@@ -903,6 +973,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcheckedint_impl.h \
   /usr/include/qt6/QtCore/qcompare.h \
@@ -920,11 +991,17 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
+  /usr/include/qt6/QtCore/qdirlisting.h \
   /usr/include/qt6/QtCore/qendian.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -935,6 +1012,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qglobalstatic.h \
   /usr/include/qt6/QtCore/qhash.h \
   /usr/include/qt6/QtCore/qhashfunctions.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qiterable.h \
   /usr/include/qt6/QtCore/qiterator.h \
@@ -972,6 +1050,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/qt6/QtCore/qsize.h \
   /usr/include/qt6/QtCore/qspan.h \
+  /usr/include/qt6/QtCore/qstack.h \
   /usr/include/qt6/QtCore/qstdlibdetection.h \
   /usr/include/qt6/QtCore/qstring.h \
   /usr/include/qt6/QtCore/qstringalgorithms.h \
@@ -999,6 +1078,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -1017,11 +1097,16 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QAction \
+  /usr/include/qt6/QtGui/QShortcut \
+  /usr/include/qt6/QtGui/QShowEvent \
+  /usr/include/qt6/QtGui/QTransform \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qbrush.h \
   /usr/include/qt6/QtGui/qcolor.h \
   /usr/include/qt6/QtGui/qcursor.h \
+  /usr/include/qt6/QtGui/qevent.h \
+  /usr/include/qt6/QtGui/qeventpoint.h \
   /usr/include/qt6/QtGui/qfont.h \
   /usr/include/qt6/QtGui/qfontinfo.h \
   /usr/include/qt6/QtGui/qfontmetrics.h \
@@ -1030,6 +1115,7 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/qt6/QtGui/qicon.h \
   /usr/include/qt6/QtGui/qimage.h \
+  /usr/include/qt6/QtGui/qinputdevice.h \
   /usr/include/qt6/QtGui/qinputmethod.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
@@ -1037,10 +1123,14 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
+  /usr/include/qt6/QtGui/qpointingdevice.h \
   /usr/include/qt6/QtGui/qpolygon.h \
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qscreen.h \
+  /usr/include/qt6/QtGui/qscreen_platform.h \
+  /usr/include/qt6/QtGui/qshortcut.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtGui/qtextformat.h \
@@ -1049,18 +1139,30 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: /home/nakss_mef/script-editor/src/ma
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
   /usr/include/qt6/QtGui/qtransform.h \
+  /usr/include/qt6/QtGui/qvector2d.h \
+  /usr/include/qt6/QtGui/qvectornd.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
   /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QMenu \
+  /usr/include/qt6/QtWidgets/QMenuBar \
+  /usr/include/qt6/QtWidgets/QMessageBox \
+  /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/QTextEdit \
   /usr/include/qt6/QtWidgets/QToolBar \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
   /usr/include/qt6/QtWidgets/qmenu.h \
+  /usr/include/qt6/QtWidgets/qmenubar.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/qt6/QtWidgets/qstatusbar.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
   /usr/include/qt6/QtWidgets/qtextedit.h \
   /usr/include/qt6/QtWidgets/qtoolbar.h \
@@ -1225,6 +1327,10 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
   /usr/include/c++/15.2.1/bits/formatfwd.h \
+  /usr/include/c++/15.2.1/bits/fs_dir.h \
+  /usr/include/c++/15.2.1/bits/fs_fwd.h \
+  /usr/include/c++/15.2.1/bits/fs_ops.h \
+  /usr/include/c++/15.2.1/bits/fs_path.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -1322,6 +1428,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
   /usr/include/c++/15.2.1/cmath \
+  /usr/include/c++/15.2.1/codecvt \
   /usr/include/c++/15.2.1/compare \
   /usr/include/c++/15.2.1/concepts \
   /usr/include/c++/15.2.1/cstddef \
@@ -1342,6 +1449,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/filesystem \
   /usr/include/c++/15.2.1/format \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
@@ -1429,6 +1537,13 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QDebug \
+  /usr/include/qt6/QtCore/QList \
+  /usr/include/qt6/QtCore/QObject \
+  /usr/include/qt6/QtCore/QRect \
+  /usr/include/qt6/QtCore/QSize \
+  /usr/include/qt6/QtCore/QSizeF \
+  /usr/include/qt6/QtCore/QStack \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20iterator.h \
@@ -1453,6 +1568,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
   /usr/include/qt6/QtCore/qbytearrayview.h \
+  /usr/include/qt6/QtCore/qcalendar.h \
   /usr/include/qt6/QtCore/qchar.h \
   /usr/include/qt6/QtCore/qcheckedint_impl.h \
   /usr/include/qt6/QtCore/qcompare.h \
@@ -1470,11 +1586,17 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qcoreevent.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qdir.h \
+  /usr/include/qt6/QtCore/qdirlisting.h \
   /usr/include/qt6/QtCore/qendian.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/qt6/QtCore/qfile.h \
+  /usr/include/qt6/QtCore/qfiledevice.h \
+  /usr/include/qt6/QtCore/qfileinfo.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
   /usr/include/qt6/QtCore/qforeach.h \
@@ -1485,6 +1607,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qglobalstatic.h \
   /usr/include/qt6/QtCore/qhash.h \
   /usr/include/qt6/QtCore/qhashfunctions.h \
+  /usr/include/qt6/QtCore/qiodevice.h \
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qiterable.h \
   /usr/include/qt6/QtCore/qiterator.h \
@@ -1522,6 +1645,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/qt6/QtCore/qsize.h \
   /usr/include/qt6/QtCore/qspan.h \
+  /usr/include/qt6/QtCore/qstack.h \
   /usr/include/qt6/QtCore/qstdlibdetection.h \
   /usr/include/qt6/QtCore/qstring.h \
   /usr/include/qt6/QtCore/qstringalgorithms.h \
@@ -1549,6 +1673,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
+  /usr/include/qt6/QtCore/qtimezone.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -1567,11 +1692,16 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QAction \
+  /usr/include/qt6/QtGui/QShortcut \
+  /usr/include/qt6/QtGui/QShowEvent \
+  /usr/include/qt6/QtGui/QTransform \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qbrush.h \
   /usr/include/qt6/QtGui/qcolor.h \
   /usr/include/qt6/QtGui/qcursor.h \
+  /usr/include/qt6/QtGui/qevent.h \
+  /usr/include/qt6/QtGui/qeventpoint.h \
   /usr/include/qt6/QtGui/qfont.h \
   /usr/include/qt6/QtGui/qfontinfo.h \
   /usr/include/qt6/QtGui/qfontmetrics.h \
@@ -1580,6 +1710,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtGui/qguiapplication_platform.h \
   /usr/include/qt6/QtGui/qicon.h \
   /usr/include/qt6/QtGui/qimage.h \
+  /usr/include/qt6/QtGui/qinputdevice.h \
   /usr/include/qt6/QtGui/qinputmethod.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
@@ -1587,10 +1718,14 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
+  /usr/include/qt6/QtGui/qpointingdevice.h \
   /usr/include/qt6/QtGui/qpolygon.h \
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qscreen.h \
+  /usr/include/qt6/QtGui/qscreen_platform.h \
+  /usr/include/qt6/QtGui/qshortcut.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtGui/qtextformat.h \
@@ -1599,20 +1734,30 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: /home/nakss_mef/script-edito
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
   /usr/include/qt6/QtGui/qtransform.h \
+  /usr/include/qt6/QtGui/qvector2d.h \
+  /usr/include/qt6/QtGui/qvectornd.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
   /usr/include/qt6/QtWidgets/QApplication \
+  /usr/include/qt6/QtWidgets/QFileDialog \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QMenu \
   /usr/include/qt6/QtWidgets/QMenuBar \
+  /usr/include/qt6/QtWidgets/QMessageBox \
+  /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/QTextEdit \
   /usr/include/qt6/QtWidgets/QToolBar \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
+  /usr/include/qt6/QtWidgets/qdialog.h \
+  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/qt6/QtWidgets/qfiledialog.h \
   /usr/include/qt6/QtWidgets/qframe.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
   /usr/include/qt6/QtWidgets/qmenu.h \
   /usr/include/qt6/QtWidgets/qmenubar.h \
+  /usr/include/qt6/QtWidgets/qmessagebox.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/qt6/QtWidgets/qstatusbar.h \
   /usr/include/qt6/QtWidgets/qtabwidget.h \
   /usr/include/qt6/QtWidgets/qtextedit.h \
   /usr/include/qt6/QtWidgets/qtoolbar.h \
@@ -1732,8 +1877,6 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/libdouble-conversion.so.3:
 
-/usr/lib/libc_nonshared.a:
-
 /usr/lib/libbz2.so.1.0:
 
 /usr/lib/libbrotlidec.so.1:
@@ -1768,37 +1911,97 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/Scrt1.o:
 
+/usr/include/qt6/QtCore/QDebug:
+
 /home/nakss_mef/script-editor/src/scripteditor.cpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+
+/usr/include/wctype.h:
+
+/usr/include/wchar.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/syscall.h:
+
+/usr/lib/libzstd.so.1:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/strings.h:
+
+/usr/include/string.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdint.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/libQt6DBus.so.6:
+
+/usr/include/sched.h:
+
+/usr/include/qt6/QtWidgets/qwidget.h:
+
+/usr/include/qt6/QtWidgets/qtwidgetsglobal.h:
+
+/usr/include/qt6/QtWidgets/qtwidgetsexports.h:
+
+/usr/include/qt6/QtWidgets/qtwidgets-config.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
+
+/usr/include/qt6/QtWidgets/qtoolbar.h:
+
+/usr/include/qt6/QtWidgets/qtextedit.h:
+
+/usr/include/qt6/QtWidgets/qstatusbar.h:
+
+/usr/include/qt6/QtWidgets/qsizepolicy.h:
+
+/usr/include/qt6/QtWidgets/qmenu.h:
+
+/usr/include/qt6/QtWidgets/qfiledialog.h:
+
+/usr/include/qt6/QtWidgets/qdialogbuttonbox.h:
+
+/usr/include/qt6/QtWidgets/qdialog.h:
 
 /usr/include/qt6/QtWidgets/qapplication.h:
 
+/usr/include/qt6/QtWidgets/qabstractscrollarea.h:
+
+/usr/include/qt6/QtWidgets/QToolBar:
+
+/usr/include/qt6/QtWidgets/QTextEdit:
+
+/usr/include/qt6/QtWidgets/QStatusBar:
+
+/usr/include/qt6/QtWidgets/QMessageBox:
+
+/usr/include/qt6/QtWidgets/QMenu:
+
+/usr/include/qt6/QtWidgets/QMainWindow:
+
+/usr/include/qt6/QtWidgets/QFileDialog:
+
 /usr/include/qt6/QtWidgets/QApplication:
 
-/usr/include/qt6/QtGui/qinputmethod.h:
+/usr/include/qt6/QtGui/qtransform.h:
 
-/usr/include/qt6/QtGui/qguiapplication_platform.h:
+/usr/include/c++/15.2.1/filesystem:
 
-/usr/include/qt6/QtGui/qguiapplication.h:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/qt6/QtCore/qnativeinterface.h:
-
-/usr/include/qt6/QtCore/qeventloop.h:
-
-/usr/include/qt6/QtCore/qdeadlinetimer.h:
-
-/usr/include/qt6/QtCore/qcoreapplication_platform.h:
-
-/usr/include/qt6/QtCore/qcoreapplication.h:
-
-/usr/include/qt6/QtCore/qabstracteventdispatcher.h:
-
-/usr/lib/libdbus-1.so.3:
-
-/usr/include/c++/15.2.1/iosfwd:
-
-/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/15.2.1/functional:
+/usr/include/bits/environments.h:
 
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
@@ -1818,23 +2021,23 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/locale:
 
+/usr/include/qt6/QtGui/qtguiexports.h:
+
+/usr/include/c++/15.2.1/ctime:
+
 /usr/include/bits/timex.h:
 
-/usr/include/c++/15.2.1/cstring:
-
 /usr/include/c++/15.2.1/cstdint:
-
-/usr/include/c++/15.2.1/cstddef:
 
 /usr/include/qt6/QtCore/qcheckedint_impl.h:
 
 /usr/include/c++/15.2.1/concepts:
 
+/usr/include/c++/15.2.1/codecvt:
+
 /usr/include/endian.h:
 
 /usr/include/qt6/QtGui/qregion.h:
-
-/usr/include/stdint.h:
 
 /usr/include/c++/15.2.1/cassert:
 
@@ -1848,6 +2051,8 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/linux/posix_types.h:
 
+/usr/include/qt6/QtCore/QObject:
+
 /usr/include/qt6/QtCore/q23utility.h:
 
 /usr/include/qt6/QtCore/qoverload.h:
@@ -1860,9 +2065,9 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/qt6/QtGui/qicon.h:
 
-/usr/include/qt6/QtWidgets/QToolBar:
-
 /usr/include/c++/15.2.1/bits/unordered_map.h:
+
+/usr/include/qt6/QtCore/QStack:
 
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
@@ -1871,6 +2076,10 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 /usr/include/c++/15.2.1/bits/unicode.h:
 
 /usr/include/bits/unistd_ext.h:
+
+/usr/include/qt6/QtWidgets/qmainwindow.h:
+
+/usr/include/c++/15.2.1/bits/unicode-data.h:
 
 /usr/include/qt6/QtCore/qnamespace.h:
 
@@ -1890,19 +2099,17 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/asm-generic/bitsperlong.h:
 
+/usr/include/sys/single_threaded.h:
+
+/usr/include/asm-generic/errno.h:
+
 /usr/include/c++/15.2.1/bits/stl_uninitialized.h:
 
 /usr/include/c++/15.2.1/bits/stl_algo.h:
 
 /usr/include/pthread.h:
 
-/usr/include/qt6/QtWidgets/qwidget.h:
-
 /usr/include/c++/15.2.1/bits/stl_tree.h:
-
-/usr/include/qt6/QtCore/qstringbuilder.h:
-
-/usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
 
@@ -1916,19 +2123,17 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
+/usr/include/time.h:
+
+/usr/include/qt6/QtCore/qlocale.h:
+
 /usr/include/c++/15.2.1/bits/std_function.h:
 
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
+/usr/include/qt6/QtCore/QRect:
+
 /usr/include/c++/15.2.1/bits/shared_ptr.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/c++/15.2.1/initializer_list:
-
-/usr/include/c++/15.2.1/variant:
 
 /usr/include/c++/15.2.1/bits/ranges_base.h:
 
@@ -1948,15 +2153,13 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
 
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.2.1/bits/node_handle.h:
-
 /usr/include/c++/15.2.1/bits/basic_string.tcc:
 
 /usr/include/c++/15.2.1/bits/new_allocator.h:
 
 /usr/include/c++/15.2.1/bits/move.h:
+
+/usr/include/qt6/QtCore/qiodevice.h:
 
 /usr/include/qt6/QtCore/qtaggedpointer.h:
 
@@ -1967,8 +2170,6 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 /usr/include/qt6/QtCore/qtmocconstants.h:
 
 /usr/include/c++/15.2.1/bits/localefwd.h:
-
-/usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/bits/select.h:
 
@@ -2002,9 +2203,9 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/bits/hashtable_policy.h:
 
-/usr/include/c++/15.2.1/bits/hashtable.h:
-
 /usr/include/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/qt6/QtGui/qshortcut.h:
 
 /usr/include/c++/15.2.1/ext/concurrence.h:
 
@@ -2018,6 +2219,8 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/qt6/QtCore/qtcore-config.h:
 
+/usr/include/qt6/QtCore/qmap.h:
+
 /usr/include/qt6/QtWidgets/qmenubar.h:
 
 /usr/include/c++/15.2.1/bits/stl_relops.h:
@@ -2027,6 +2230,14 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 /usr/include/c++/15.2.1/bits/stl_numeric.h:
 
 /usr/include/qt6/QtCore/qdebug.h:
+
+/usr/include/c++/15.2.1/bits/hashtable.h:
+
+/usr/include/c++/15.2.1/bits/fs_fwd.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/15.2.1/bits/fs_dir.h:
 
 /usr/include/c++/15.2.1/bits/exception_defines.h:
 
@@ -2038,13 +2249,19 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h:
 
-/usr/include/qt6/QtWidgets/QMainWindow:
-
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/c++/15.2.1/bits/node_handle.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
 
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/bits/setjmp.h:
+
+/usr/include/qt6/QtCore/qstack.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
@@ -2055,8 +2272,6 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 /usr/include/c++/15.2.1/bits/codecvt.h:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
-
-/usr/include/sys/syscall.h:
 
 /usr/include/c++/15.2.1/cstdlib:
 
@@ -2072,7 +2287,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/tr1/beta_function.tcc:
 
-/usr/include/bits/pthreadtypes-arch.h:
+/usr/include/c++/15.2.1/bits/fs_ops.h:
 
 /usr/include/c++/15.2.1/bits/atomic_base.h:
 
@@ -2110,35 +2325,17 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/errno.h:
 
-/usr/include/bits/getopt_core.h:
+/usr/lib/libc.so.6:
 
-/usr/include/c++/15.2.1/ctime:
+/usr/include/bits/fp-fast.h:
 
-/usr/include/qt6/QtGui/qtguiexports.h:
+/usr/include/bits/floatn.h:
 
 /usr/lib/libgomp.so.1:
 
 /usr/include/c++/15.2.1/atomic:
 
 /usr/include/qt6/QtCore/qsharedpointer.h:
-
-/usr/include/qt6/QtCore/qbasictimer.h:
-
-/usr/include/qt6/QtGui/qfontvariableaxis.h:
-
-/usr/include/c++/15.2.1/array:
-
-/usr/lib/libc.so.6:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/lib/libQt6DBus.so.6:
-
-/usr/include/sched.h:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/floatn.h:
 
 /usr/include/bits/uio_lim.h:
 
@@ -2158,9 +2355,7 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/15.2.1/ios:
-
-/usr/include/bits/thread-shared-types.h:
+/usr/include/qt6/QtGui/qguiapplication_platform.h:
 
 /usr/include/qt6/QtCore/qscopedpointer.h:
 
@@ -2190,25 +2385,17 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/bits/posix1_lim.h:
 
-/usr/include/wchar.h:
-
 /usr/include/bits/stdint-least.h:
 
 /usr/include/c++/15.2.1/bits/ostream.h:
 
 /usr/include/asm/types.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/environments.h:
-
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/15.2.1/iterator:
 
 /usr/include/c++/15.2.1/ratio:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
 
 /usr/include/c++/15.2.1/bits/quoted_string.h:
 
@@ -2242,9 +2429,11 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/asm-generic/int-ll64.h:
 
-/usr/include/qt6/QtCore/qxptype_traits.h:
+/usr/include/c++/15.2.1/bits/locale_facets_nonio.tcc:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
+/usr/include/qt6/QtCore/qdatetime.h:
+
+/usr/include/qt6/QtCore/qxptype_traits.h:
 
 /usr/include/bits/mathcalls-macros.h:
 
@@ -2256,15 +2445,13 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 
 /usr/include/asm/unistd_64.h:
 
+/usr/include/qt6/QtGui/qvector2d.h:
+
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
-
-/usr/include/qt6/QtCore/qrefcount.h:
-
-/usr/include/c++/15.2.1/cstdio:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -2294,27 +2481,25 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15.2.1/bits/locale_facets_nonio.h:
 
+/usr/include/syscall.h:
+
+/usr/include/qt6/QtCore/qswap.h:
+
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/qt6/QtCore/qlist.h:
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
-/usr/include/bits/iscanonical.h:
+/usr/include/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/qt6/QtCore/qdatastream.h:
 
 /usr/include/bits/syscall.h:
 
-/usr/include/bits/locale.h:
-
-/usr/include/c++/15.2.1/iomanip:
-
 /usr/include/bits/local_lim.h:
 
 /usr/include/qt6/QtCore/qtcoreexports.h:
-
-/usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
@@ -2326,9 +2511,11 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 
 /usr/include/bits/atomic_wide_counter.h:
 
-/usr/include/bits/stdlib-float.h:
+/usr/include/bits/thread-shared-types.h:
 
-/usr/include/qt6/QtGui/qtransform.h:
+/usr/include/c++/15.2.1/ios:
+
+/usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
 
@@ -2337,6 +2524,12 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtCore/qstdlibdetection.h:
 
 /usr/include/bits/flt-eval-method.h:
+
+/usr/include/c++/15.2.1/cstddef:
+
+/usr/include/c++/15.2.1/bits/fs_path.h:
+
+/usr/include/qt6/QtGui/qvectornd.h:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -2347,6 +2540,8 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 /usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/qt6/QtGui/qscreen.h:
 
 /usr/include/bits/types/locale_t.h:
 
@@ -2360,6 +2555,12 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 
 /usr/include/bits/struct_rwlock.h:
 
+/usr/include/sys/select.h:
+
+/usr/include/c++/15.2.1/bits/stl_function.h:
+
+/usr/include/c++/15.2.1/bits/chrono.h:
+
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
 /usr/include/qt6/QtCore/qscopeguard.h:
@@ -2371,6 +2572,8 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 /usr/include/bits/waitflags.h:
 
 /usr/include/qt6/QtCore/qcompilerdetection.h:
+
+/usr/include/qt6/QtGui/QTransform:
 
 /usr/include/c++/15.2.1/tr1/hypergeometric.tcc:
 
@@ -2384,8 +2587,6 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15.2.1/bits/stl_tempbuf.h:
 
-/usr/include/stdc-predef.h:
-
 /usr/include/c++/15.2.1/bits/char_traits.h:
 
 /usr/include/c++/15.2.1/bits/algorithmfwd.h:
@@ -2393,6 +2594,8 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 /usr/include/c++/15.2.1/bits/memoryfwd.h:
 
 /usr/include/bits/types/wint_t.h:
+
+/usr/include/qt6/QtGui/qguiapplication.h:
 
 /usr/lib/libxkbcommon.so.0:
 
@@ -2403,8 +2606,6 @@ ScriptEditor_autogen/mocs_compilation.cpp:
 /usr/include/bits/wctype-wchar.h:
 
 /usr/include/bits/wordsize.h:
-
-/usr/include/stdio.h:
 
 /usr/include/c++/15.2.1/bits/postypes.h:
 
@@ -2427,10 +2628,6 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 /usr/include/c++/15.2.1/bits/alloc_traits.h:
 
 /usr/include/qt6/QtCore/qtmochelpers.h:
-
-/usr/include/qt6/QtCore/qcoreevent.h:
-
-/usr/include/qt6/QtGui/qbitmap.h:
 
 /usr/include/c++/15.2.1/bits/formatfwd.h:
 
@@ -2458,6 +2655,16 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
 
+/usr/include/c++/15.2.1/functional:
+
+/usr/include/c++/15.2.1/initializer_list:
+
+/usr/include/c++/15.2.1/variant:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/15.2.1/iomanip:
+
 /usr/include/c++/15.2.1/istream:
 
 /usr/include/c++/15.2.1/memory:
@@ -2471,12 +2678,6 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 /usr/include/qt6/QtCore/qset.h:
 
 /usr/include/c++/15.2.1/numeric:
-
-/usr/include/c++/15.2.1/bits/stl_function.h:
-
-/usr/include/c++/15.2.1/bits/chrono.h:
-
-/usr/include/sys/select.h:
 
 /usr/include/c++/15.2.1/charconv:
 
@@ -2508,6 +2709,12 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 
 /usr/include/c++/15.2.1/sstream:
 
+/usr/include/unistd.h:
+
+/usr/include/qt6/QtGui/qtguiglobal.h:
+
+/usr/include/qt6/QtGui/qfont.h:
+
 /usr/include/c++/15.2.1/stdexcept:
 
 /usr/include/c++/15.2.1/stdlib.h:
@@ -2538,11 +2745,15 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 
 /usr/include/qt6/QtCore/qtdeprecationdefinitions.h:
 
-/usr/include/strings.h:
-
 /usr/include/c++/15.2.1/bits/std_abs.h:
 
 /usr/include/c++/15.2.1/tr1/special_function_util.h:
+
+/usr/include/qt6/QtCore/qstringbuilder.h:
+
+/usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
+
+/usr/include/qt6/QtGui/QShortcut:
 
 /usr/include/c++/15.2.1/bits/specfun.h:
 
@@ -2554,13 +2765,9 @@ ScriptEditor_autogen/6YEA5652QU/moc_scripteditor.cpp:
 
 /usr/include/c++/15.2.1/unordered_set:
 
-/usr/include/c++/15.2.1/utility:
-
 /usr/include/c++/15.2.1/set:
 
 /usr/include/qt6/QtCore/qiodevicebase.h:
-
-/usr/include/qt6/QtWidgets/QMenu:
 
 /usr/include/c++/15.2.1/version:
 
@@ -2596,6 +2803,8 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/gnu/stubs.h:
 
+/usr/include/qt6/QtWidgets/qmessagebox.h:
+
 /usr/include/qt6/QtCore/qatomic.h:
 
 /usr/include/linux/close_range.h:
@@ -2606,11 +2815,15 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/linux/errno.h:
 
-/usr/include/qt6/QtWidgets/qtwidgets-config.h:
-
 /usr/lib/crtn.o:
 
+/usr/include/qt6/QtGui/QShowEvent:
+
 /usr/include/linux/limits.h:
+
+/usr/include/qt6/QtGui/qbitmap.h:
+
+/usr/include/qt6/QtCore/qcoreevent.h:
 
 /usr/include/linux/sched/types.h:
 
@@ -2619,6 +2832,18 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 /usr/include/bits/fp-logb.h:
 
 /usr/include/linux/stddef.h:
+
+/usr/include/c++/15.2.1/utility:
+
+/usr/include/qt6/QtCore/QList:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/qt6/QtCore/QSize:
+
+/usr/include/qt6/QtCore/qtformat_impl.h:
+
+/usr/include/qt6/QtCore/QSizeF:
 
 /usr/include/qt6/QtCore/q20functional.h:
 
@@ -2630,6 +2855,12 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/q20memory.h:
 
+/usr/include/qt6/QtGui/qfontvariableaxis.h:
+
+/usr/include/c++/15.2.1/array:
+
+/usr/include/qt6/QtCore/qbasictimer.h:
+
 /usr/include/qt6/QtGui/qimage.h:
 
 /usr/include/qt6/QtCore/q20utility.h:
@@ -2639,6 +2870,12 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 /usr/include/c++/15.2.1/bits/sstream.tcc:
 
 /usr/include/qt6/QtCore/q23type_traits.h:
+
+/usr/include/qt6/QtCore/qabstracteventdispatcher.h:
+
+/usr/include/qt6/QtGui/qwindowdefs.h:
+
+/usr/include/qt6/QtCore/qalgorithms.h:
 
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
 
@@ -2660,9 +2897,25 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qbindingstorage.h:
 
+/usr/include/qt6/QtWidgets/qframe.h:
+
+/usr/include/c++/15.2.1/bits/chrono_io.h:
+
+/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
+
 /usr/include/qt6/QtCore/qbytearraylist.h:
 
 /usr/include/qt6/QtCore/qbytearrayview.h:
+
+/usr/include/qt6/QtCore/qrefcount.h:
+
+/usr/include/c++/15.2.1/cstdio:
+
+/usr/include/qt6/QtCore/qcalendar.h:
+
+/usr/include/c++/15.2.1/bits/iterator_concepts.h:
+
+/usr/include/qt6/QtCore/qstringview.h:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
@@ -2672,6 +2925,10 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qcompare.h:
 
+/usr/include/bits/iscanonical.h:
+
+/usr/include/qt6/QtCore/qdir.h:
+
 /usr/include/qt6/QtCore/qcomparehelpers.h:
 
 /usr/include/qt6/QtCore/qcontainerfwd.h:
@@ -2680,15 +2937,37 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qcontainertools_impl.h:
 
-/usr/include/qt6/QtWidgets/QTextEdit:
+/usr/include/qt6/QtCore/qcoreapplication_platform.h:
 
 /usr/include/qt6/QtCore/qdarwinhelpers.h:
+
+/usr/include/qt6/QtCore/qdeadlinetimer.h:
+
+/usr/lib/libdbus-1.so.3:
+
+/usr/include/c++/15.2.1/iosfwd:
+
+/usr/include/qt6/QtCore/qdirlisting.h:
+
+/usr/lib/libc_nonshared.a:
+
+/usr/include/qt6/QtCore/qfiledevice.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/qt6/QtCore/qtimezone.h:
 
 /usr/include/c++/15.2.1/bits/locale_classes.tcc:
 
 /usr/include/qt6/QtCore/qendian.h:
 
+/usr/include/qt6/QtCore/qeventloop.h:
+
 /usr/include/qt6/QtCore/qexceptionhandling.h:
+
+/usr/include/qt6/QtCore/qfile.h:
+
+/usr/include/qt6/QtCore/qfileinfo.h:
 
 /usr/include/qt6/QtCore/qfloat16.h:
 
@@ -2724,15 +3003,13 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtGui/qrgba64.h:
 
-/usr/include/qt6/QtCore/qmap.h:
-
 /usr/include/c++/15.2.1/bits/locale_conv.h:
 
 /usr/include/qt6/QtCore/qmargins.h:
 
-/usr/include/qt6/QtWidgets/qsizepolicy.h:
-
 /usr/include/qt6/QtCore/qmetacontainer.h:
+
+/usr/include/qt6/QtCore/qnativeinterface.h:
 
 /usr/include/qt6/QtCore/qnumeric.h:
 
@@ -2752,11 +3029,17 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qprocessordetection.h:
 
+/usr/include/stdlib.h:
+
+/usr/include/qt6/QtCore/qrect.h:
+
 /usr/include/qt6/QtCore/qshareddata.h:
 
 /usr/include/qt6/QtCore/qsize.h:
 
 /usr/include/qt6/QtCore/qtnoop.h:
+
+/usr/include/qt6/QtGui/qinputdevice.h:
 
 /usr/include/qt6/QtCore/qspan.h:
 
@@ -2774,10 +3057,6 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qstringtokenizer.h:
 
-/usr/include/c++/15.2.1/bits/iterator_concepts.h:
-
-/usr/include/qt6/QtCore/qstringview.h:
-
 /usr/include/qt6/QtCore/qsysinfo.h:
 
 /usr/include/qt6/QtCore/qtclasshelpermacros.h:
@@ -2793,8 +3072,6 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 /usr/include/qt6/QtCore/qtenvironmentvariables.h:
 
 /usr/include/qt6/QtCore/qtextstream.h:
-
-/usr/include/qt6/QtCore/qtformat_impl.h:
 
 /usr/lib/libXau.so.6:
 
@@ -2824,10 +3101,6 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtCore/qtypes.h:
 
-/usr/include/qt6/QtCore/qalgorithms.h:
-
-/usr/include/qt6/QtGui/qwindowdefs.h:
-
 /usr/include/qt6/QtCore/qurl.h:
 
 /usr/include/c++/15.2.1/bits/ios_base.h:
@@ -2842,17 +3115,35 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtGui/qbrush.h:
 
+/usr/include/qt6/QtWidgets/qtabwidget.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/qt6/QtGui/qevent.h:
+
+/usr/include/qt6/QtGui/qeventpoint.h:
+
 /usr/include/qt6/QtGui/qfontmetrics.h:
+
+/usr/include/qt6/QtGui/qinputmethod.h:
 
 /usr/include/qt6/QtCore/qstringconverter_base.h:
 
 /usr/include/qt6/QtGui/qpixmap.h:
+
+/usr/include/c++/15.2.1/cstring:
+
+/usr/include/qt6/QtGui/qpointingdevice.h:
 
 /usr/include/bits/getopt_posix.h:
 
 /usr/include/qt6/QtCore/qfunctionaltools_impl.h:
 
 /usr/include/qt6/QtGui/qpolygon.h:
+
+/usr/include/qt6/QtGui/qscreen_platform.h:
 
 /usr/include/qt6/QtGui/qtextcursor.h:
 
@@ -2864,68 +3155,8 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
 
 /usr/include/qt6/QtGui/qtextoption.h:
 
-/usr/include/qt6/QtCore/qswap.h:
-
-/usr/include/syscall.h:
-
 /usr/include/c++/15.2.1/bits/allocated_ptr.h:
 
 /usr/include/c++/15.2.1/bits/stream_iterator.h:
 
 /usr/include/qt6/QtGui/qtgui-config.h:
-
-/usr/include/qt6/QtWidgets/qabstractscrollarea.h:
-
-/usr/include/c++/15.2.1/bits/chrono_io.h:
-
-/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
-
-/usr/include/qt6/QtWidgets/qframe.h:
-
-/usr/include/c++/15.2.1/bits/unicode-data.h:
-
-/usr/include/qt6/QtWidgets/qmainwindow.h:
-
-/usr/include/qt6/QtWidgets/qmenu.h:
-
-/usr/include/qt6/QtWidgets/qtextedit.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/include/qt6/QtWidgets/qtabwidget.h:
-
-/usr/include/qt6/QtWidgets/qtwidgetsexports.h:
-
-/usr/include/qt6/QtWidgets/qtwidgetsglobal.h:
-
-/usr/include/qt6/QtCore/qrect.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/string.h:
-
-/usr/lib/libzstd.so.1:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/qt6/QtCore/qlocale.h:
-
-/usr/include/time.h:
-
-/usr/include/qt6/QtGui/qtguiglobal.h:
-
-/usr/include/qt6/QtGui/qfont.h:
-
-/usr/include/unistd.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdbool.h:
-
-/usr/include/qt6/QtWidgets/qtoolbar.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:

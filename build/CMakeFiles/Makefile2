@@ -84,8 +84,8 @@ clean: CMakeFiles/ScriptEditor_autogen.dir/clean
 # Target rules for target CMakeFiles/ScriptEditor.dir
 
 # All Build rule for target.
-CMakeFiles/ScriptEditor.dir/all: CMakeFiles/ScriptEditor_autogen.dir/all
 CMakeFiles/ScriptEditor.dir/all: CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir/all
+CMakeFiles/ScriptEditor.dir/all: CMakeFiles/ScriptEditor_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/CMakeFiles --progress-num=1,2,3,4 "Built target ScriptEditor"

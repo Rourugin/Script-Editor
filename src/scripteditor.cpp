@@ -1,4 +1,5 @@
 #include "scripteditor.h"
+#include <QDebug>
 
 
 ScriptEditor::ScriptEditor(QWidget *parent) : QMainWindow(parent)
@@ -18,7 +19,7 @@ void ScriptEditor::SetupUI()
 {
     pTextEdit = new QTextEdit(this);
     setCentralWidget(pTextEdit);
-    setWindowTitle("Script Editor");
+    setWindowTitle("Script Editor[*]");
     resize(800, 600);
 }
 
@@ -64,14 +65,21 @@ void ScriptEditor::SetupFormatting()
     
     //text
     QTextCharFormat TextFormat;
-    TextFormat.setBackground(QColor());
+    TextFormat.setBackground(QColor(QColorConstants::Svg::grey));
     textFormats["text"] = TextFormat;
+
+    //general
+    QTextCharFormat GeneralFormat;
+    GeneralFormat.setBackground(QColor());
+    textFormats["general"] = GeneralFormat;
+    openTags.push("general");
 }
 
 void ScriptEditor::CreateActions()
 {
     pAnimationMarkerAction = new QAction("&animation", this);
     pEffectMarkerAction = new QAction("&effect", this);
+    pSaveAsFileAction = new QAction("&Save As", this);
     pVideoMarkerAction = new QAction("&video", this);
     pAudioMarkerAction = new QAction("&audio", this);
     pImageMarkerAction = new QAction("&image", this);
@@ -79,9 +87,9 @@ void ScriptEditor::CreateActions()
     pTextMarkerAction = new QAction("&Text", this);
     pNoteMarkerAction = new QAction("&note", this);
     pGifMarkerAction = new QAction("&gif", this);
-    pOpenFileAction = new QAction("&open", this);
-    pSaveFileAction = new QAction("&save", this);
-    pNewFileAction = new QAction("&new", this);
+    pOpenFileAction = new QAction("&Open", this);
+    pSaveFileAction = new QAction("&Save", this);
+    pNewFileAction = new QAction("&New", this);
 
     pAnimationMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_D));
     pEffectMarkerAction->setShortcut(QKeySequence(Qt::CTRL | Qt::SHIFT | Qt::Key_F));
@@ -136,12 +144,6 @@ void ScriptEditor::CreateMenus()
 
 void ScriptEditor::CheckNestingLevel()
 {
-    if (openTags.isEmpty() == true)
-    {
-        statusBar()->showMessage("General");
-        return;
-    }
-
     QString nestingPath;
     for (int i = 0; i < openTags.size(); ++i)
     {
@@ -157,6 +159,8 @@ void ScriptEditor::CheckNestingLevel()
         else if (tag == "gif") displayName = "GIF";
         else if (tag == "effect") displayName = "Effect";
         else if (tag == "note") displayName = "Note";
+        else if (tag == "text") displayName = "Text";
+        else if (tag == "general") displayName = "General";
 
         nestingPath += displayName;
     }
@@ -166,12 +170,25 @@ void ScriptEditor::CheckNestingLevel()
 
 void ScriptEditor::NewFile()
 {
-    //code
+    if (AskSave() == true)
+    {
+        pTextEdit->clear();
+        currentFilePath.clear();
+        setWindowTitle("Script Editro - New File");
+        setWindowModified(false);
+    }
 }
 
 void ScriptEditor::OpenFile()
 {
-    //code
+    if (AskSave() == true)
+    {
+        QString fileName = QFileDialog::getOpenFileName(this, "Open Script");
+        if (fileName.isEmpty() == false)
+        {
+            LoadFromFile(fileName);
+        }
+    }
 }
 
 bool ScriptEditor::SaveToFile(const QString& filePath)
@@ -213,23 +230,48 @@ void ScriptEditor::SaveAsFile()
     }
 }
 
+bool ScriptEditor::AskSave()
+{
+    if (isWindowModified() == false)
+    {
+        return true;
+    }
+
+    QMessageBox::StandardButton answer = QMessageBox::question(this, "Script Editor",
+                                                               "The document has been modified.\nDo you want to save changes?",
+                                                               QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel);
+
+    if (answer == QMessageBox::Save)
+    {
+        SaveFile();
+        return true;
+    }
+    if (answer == QMessageBox::Cancel)
+    {
+        return false;
+    }
+    return true; //Discard
+}
+
+bool ScriptEditor::LoadFromFile(const QString& filePath)
+{
+    QFile file(filePath);
+
+    if(file.open(QIODevice::ReadOnly) == true)
+    {
+        pTextEdit->setPlainText(file.readAll());
+        currentFilePath = filePath;
+        setWindowTitle("Script Editor - " + QFileInfo(filePath).fileName());
+        setWindowModified(false);
+        return true;
+    }
+
+    return false;
+}
+
 void ScriptEditor::OnTextChanged()
 {
-    QTextCursor cursor = pTextEdit->textCursor();
-    QString currentText = pTextEdit->toPlainText();
-    int cursorPos = cursor.position();
-
-    if (cursorPos > 0 && currentText.length() >= cursorPos)
-    {
-        QChar lastChar = currentText.at(cursorPos - 1);
-
-        if (lastChar == ']' && openTags.isEmpty() == false)
-        {
-            QString lastTag = openTags.pop();
-            pTextEdit->setFocus();
-        }
-    }
-    CheckNestingLevel();
+    setWindowModified(true);
 }
 
 void ScriptEditor::InsertTextMarker()
@@ -238,8 +280,8 @@ void ScriptEditor::InsertTextMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -249,8 +291,8 @@ void ScriptEditor::InsertAnimationMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -260,8 +302,8 @@ void ScriptEditor::InsertEffectsMarcker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -271,8 +313,8 @@ void ScriptEditor::InsertVideoMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -282,8 +324,8 @@ void ScriptEditor::InsertImageMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -293,8 +335,8 @@ void ScriptEditor::InsertAudioMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -304,8 +346,8 @@ void ScriptEditor::InsertNoteMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }
 
@@ -315,7 +357,7 @@ void ScriptEditor::InsertGifMarker()
     QTextCursor cursor = pTextEdit->textCursor();
 
     cursor.insertText("[" + tag.toUpper() + ": ", textFormats[tag]);
+    pTextEdit->setCurrentCharFormat(textFormats[tag]);
     openTags.push(tag);
-    cursor.insertText("]", textFormats[tag]);
     CheckNestingLevel();
 }

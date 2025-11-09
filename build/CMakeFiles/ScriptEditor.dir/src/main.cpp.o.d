@@ -401,15 +401,48 @@ CMakeFiles/ScriptEditor.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/QFileDialog \
+ /usr/include/qt6/QtWidgets/qfiledialog.h /usr/include/qt6/QtCore/qdir.h \
+ /usr/include/qt6/QtCore/qdirlisting.h \
+ /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qdatetime.h \
+ /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qfile.h \
+ /usr/include/c++/15.2.1/filesystem /usr/include/c++/15.2.1/bits/fs_fwd.h \
+ /usr/include/c++/15.2.1/bits/fs_path.h /usr/include/c++/15.2.1/codecvt \
+ /usr/include/c++/15.2.1/bits/fs_dir.h \
+ /usr/include/c++/15.2.1/bits/fs_ops.h \
+ /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/qtimezone.h \
+ /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtWidgets/qdialog.h \
+ /usr/include/qt6/QtWidgets/QMessageBox \
+ /usr/include/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ /usr/include/qt6/QtWidgets/QStatusBar \
+ /usr/include/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/qt6/QtGui/QShowEvent /usr/include/qt6/QtGui/qevent.h \
+ /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtGui/qscreen_platform.h \
  /usr/include/qt6/QtWidgets/QTextEdit \
  /usr/include/qt6/QtWidgets/qtextedit.h \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtWidgets/qframe.h \
- /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/QShortcut /usr/include/qt6/QtGui/qshortcut.h \
  /usr/include/qt6/QtWidgets/QToolBar \
- /usr/include/qt6/QtWidgets/qtoolbar.h /usr/include/qt6/QtGui/QAction \
- /usr/include/qt6/QtGui/qaction.h /usr/include/qt6/QtWidgets/QMenu \
- /usr/include/qt6/QtWidgets/qmenu.h
+ /usr/include/qt6/QtWidgets/qtoolbar.h \
+ /usr/include/qt6/QtWidgets/QMenuBar \
+ /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtGui/QAction /usr/include/qt6/QtGui/qaction.h \
+ /usr/include/qt6/QtCore/QStack /usr/include/qt6/QtCore/qstack.h \
+ /usr/include/qt6/QtWidgets/QMenu /usr/include/qt6/QtWidgets/qmenu.h

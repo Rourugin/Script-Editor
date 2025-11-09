@@ -2,8 +2,8 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /home/nakss_mef/script-editor/src/scripteditor.cpp \
  /usr/include/stdc-predef.h \
  /home/nakss_mef/script-editor/include/scripteditor.h \
- /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/15.2.1/type_traits \
@@ -192,10 +192,9 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/qt6/QtGui/qtguiexports.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/qt6/QtWidgets/qwidget.h \
- /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtCore/qobjectdefs.h \
- /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qchar.h \
+ /usr/include/qt6/QtCore/qcompare.h \
  /usr/include/qt6/QtCore/qstdlibdetection.h \
  /usr/include/qt6/QtCore/qcomparehelpers.h \
  /usr/include/c++/15.2.1/functional \
@@ -224,14 +223,18 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_vector.h \
  /usr/include/c++/15.2.1/bits/stl_bvector.h \
  /usr/include/c++/15.2.1/bits/vector.tcc /usr/include/c++/15.2.1/array \
+ /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qnamespace.h \
  /usr/include/qt6/QtCore/qtmetamacros.h \
- /usr/include/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/qt6/QtCore/qfunctionaltools_impl.h \
- /usr/include/c++/15.2.1/memory \
- /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15.2.1/bits/align.h \
- /usr/include/c++/15.2.1/bits/unique_ptr.h \
- /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
+ /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qxptype_traits.h /usr/include/c++/15.2.1/cstring \
+ /usr/include/c++/15.2.1/iterator \
+ /usr/include/c++/15.2.1/bits/stream_iterator.h \
  /usr/include/c++/15.2.1/iosfwd /usr/include/c++/15.2.1/bits/stringfwd.h \
  /usr/include/c++/15.2.1/bits/postypes.h /usr/include/c++/15.2.1/cwchar \
  /usr/include/wchar.h \
@@ -239,7 +242,8 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h \
- /usr/include/c++/15.2.1/bits/char_traits.h \
+ /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
+ /usr/include/c++/15.2.1/streambuf \
  /usr/include/c++/15.2.1/bits/localefwd.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/include/c++/15.2.1/clocale /usr/include/locale.h \
@@ -250,6 +254,7 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/sys/single_threaded.h \
  /usr/include/c++/15.2.1/bits/locale_classes.h \
  /usr/include/c++/15.2.1/string \
+ /usr/include/c++/15.2.1/bits/char_traits.h \
  /usr/include/c++/15.2.1/bits/ostream_insert.h \
  /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
  /usr/include/c++/15.2.1/bits/basic_string.h \
@@ -265,14 +270,18 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/c++/15.2.1/bits/locale_classes.tcc \
  /usr/include/c++/15.2.1/system_error \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/15.2.1/stdexcept /usr/include/c++/15.2.1/streambuf \
+ /usr/include/c++/15.2.1/stdexcept \
  /usr/include/c++/15.2.1/bits/streambuf.tcc \
+ /usr/include/c++/15.2.1/memory \
+ /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.2.1/bits/align.h \
+ /usr/include/c++/15.2.1/bits/unique_ptr.h \
+ /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
  /usr/include/c++/15.2.1/bits/basic_ios.h \
  /usr/include/c++/15.2.1/bits/locale_facets.h \
  /usr/include/c++/15.2.1/cwctype /usr/include/wctype.h \
  /usr/include/bits/wctype-wchar.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
@@ -284,17 +293,6 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/c++/15.2.1/backward/auto_ptr.h \
  /usr/include/c++/15.2.1/bits/ranges_uninitialized.h \
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
- /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qstring.h \
- /usr/include/qt6/QtCore/qchar.h /usr/include/qt6/QtCore/qstringview.h \
- /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
- /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/qt6/QtCore/qarraydatapointer.h \
- /usr/include/qt6/QtCore/qarraydataops.h \
- /usr/include/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/qt6/QtCore/qxptype_traits.h /usr/include/c++/15.2.1/cstring \
- /usr/include/c++/15.2.1/iterator \
- /usr/include/c++/15.2.1/bits/stream_iterator.h \
  /usr/include/qt6/QtCore/q20functional.h \
  /usr/include/qt6/QtCore/q20memory.h /usr/include/qt6/QtCore/q17memory.h \
  /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -309,6 +307,12 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/qt6/QtCore/qstringbuilder.h \
  /usr/include/qt6/QtCore/qstringconverter.h \
  /usr/include/qt6/QtCore/qstringconverter_base.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qfunctionaltools_impl.h \
  /usr/include/qt6/QtCore/qlist.h /usr/include/qt6/QtCore/qhashfunctions.h \
  /usr/include/c++/15.2.1/numeric \
  /usr/include/c++/15.2.1/bits/stl_numeric.h \
@@ -354,22 +358,27 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
  /usr/include/c++/15.2.1/bits/chrono_io.h /usr/include/c++/15.2.1/iomanip \
  /usr/include/c++/15.2.1/bits/quoted_string.h \
- /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h /usr/include/qt6/QtCore/qpoint.h \
  /usr/include/qt6/QtCore/qcheckedint_impl.h \
  /usr/include/qt6/QtCore/q23utility.h \
- /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtGui/qaction.h \
- /usr/include/qt6/QtGui/qkeysequence.h /usr/include/qt6/QtGui/qicon.h \
- /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtGui/qpixmap.h \
+ /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/qmargins.h /usr/include/qt6/QtGui/qcursor.h \
+ /usr/include/qt6/QtGui/qbitmap.h /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtGui/qpaintdevice.h /usr/include/qt6/QtCore/qrect.h \
- /usr/include/qt6/QtCore/qpoint.h /usr/include/qt6/QtGui/qcolor.h \
- /usr/include/qt6/QtGui/qrgb.h /usr/include/qt6/QtGui/qrgba64.h \
- /usr/include/qt6/QtCore/qshareddata.h /usr/include/qt6/QtGui/qimage.h \
- /usr/include/qt6/QtGui/qpixelformat.h \
+ /usr/include/qt6/QtGui/qcolor.h /usr/include/qt6/QtGui/qrgb.h \
+ /usr/include/qt6/QtGui/qrgba64.h /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtGui/qpixelformat.h \
  /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
  /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qspan.h \
  /usr/include/c++/15.2.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
- /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtCore/qvariant.h \
- /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtGui/qguiapplication.h \
+ /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
  /usr/include/qt6/QtCore/qcontiguouscache.h \
  /usr/include/qt6/QtCore/qsharedpointer.h \
  /usr/include/qt6/QtCore/qsharedpointer_impl.h \
@@ -381,38 +390,61 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/qt6/QtCore/qshareddata_impl.h \
  /usr/include/qt6/QtCore/qset.h /usr/include/qt6/QtCore/qhash.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
- /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtGui/qpalette.h \
- /usr/include/qt6/QtGui/qbrush.h /usr/include/qt6/QtGui/qfont.h \
- /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtGui/qfontmetrics.h \
- /usr/include/qt6/QtGui/qfontinfo.h \
+ /usr/include/qt6/QtCore/qalloc.h \
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtGui/qaction.h \
+ /usr/include/qt6/QtGui/qkeysequence.h /usr/include/qt6/QtGui/qicon.h \
+ /usr/include/qt6/QtGui/qpalette.h /usr/include/qt6/QtGui/qbrush.h \
+ /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/qendian.h \
+ /usr/include/qt6/QtGui/qfontmetrics.h /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/QFileDialog \
+ /usr/include/qt6/QtWidgets/qfiledialog.h /usr/include/qt6/QtCore/qdir.h \
+ /usr/include/qt6/QtCore/qdirlisting.h \
+ /usr/include/qt6/QtCore/qfiledevice.h \
+ /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qdatetime.h \
+ /usr/include/qt6/QtCore/qcalendar.h /usr/include/qt6/QtCore/qfile.h \
+ /usr/include/c++/15.2.1/filesystem /usr/include/c++/15.2.1/bits/fs_fwd.h \
+ /usr/include/c++/15.2.1/bits/fs_path.h /usr/include/c++/15.2.1/codecvt \
+ /usr/include/c++/15.2.1/bits/fs_dir.h \
+ /usr/include/c++/15.2.1/bits/fs_ops.h \
+ /usr/include/qt6/QtCore/qfileinfo.h /usr/include/qt6/QtCore/qtimezone.h \
+ /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtWidgets/qdialog.h \
+ /usr/include/qt6/QtWidgets/QMessageBox \
+ /usr/include/qt6/QtWidgets/qmessagebox.h \
+ /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
+ /usr/include/qt6/QtWidgets/QStatusBar \
+ /usr/include/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/qt6/QtGui/QShowEvent /usr/include/qt6/QtGui/qevent.h \
+ /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/qlist.h \
+ /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/qobject.h \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/QSize /usr/include/qt6/QtCore/qsize.h \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qtransform.h \
+ /usr/include/qt6/QtGui/qscreen_platform.h \
  /usr/include/qt6/QtWidgets/QTextEdit \
  /usr/include/qt6/QtWidgets/qtextedit.h \
  /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/qt6/QtWidgets/qframe.h \
- /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/QShortcut /usr/include/qt6/QtGui/qshortcut.h \
  /usr/include/qt6/QtWidgets/QToolBar \
- /usr/include/qt6/QtWidgets/qtoolbar.h /usr/include/qt6/QtGui/QAction \
- /usr/include/qt6/QtGui/qaction.h /usr/include/qt6/QtWidgets/QMenu \
- /usr/include/qt6/QtWidgets/qmenu.h \
- /usr/include/qt6/QtWidgets/QApplication \
- /usr/include/qt6/QtWidgets/qapplication.h \
- /usr/include/qt6/QtCore/qcoreapplication.h \
- /usr/include/qt6/QtCore/qcoreevent.h \
- /usr/include/qt6/QtCore/qbasictimer.h \
- /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/qt6/QtCore/qeventloop.h \
- /usr/include/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/qt6/QtCore/qnativeinterface.h \
- /usr/include/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/qt6/QtGui/qguiapplication.h \
- /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtWidgets/qtoolbar.h \
  /usr/include/qt6/QtWidgets/QMenuBar \
- /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h
+ /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtGui/QAction /usr/include/qt6/QtGui/qaction.h \
+ /usr/include/qt6/QtCore/QStack /usr/include/qt6/QtCore/qstack.h \
+ /usr/include/qt6/QtWidgets/QMenu /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h
