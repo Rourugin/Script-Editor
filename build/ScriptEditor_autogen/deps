@@ -4,7 +4,9 @@ ScriptEditor_autogen/timestamp: \
 	/home/nakss_mef/script-editor/build/CMakeFiles/4.1.2/CMakeCXXCompiler.cmake \
 	/home/nakss_mef/script-editor/build/CMakeFiles/4.1.2/CMakeSystem.cmake \
 	/home/nakss_mef/script-editor/build/ScriptEditor_autogen/moc_predefs.h \
+	/home/nakss_mef/script-editor/include/customtextedit.h \
 	/home/nakss_mef/script-editor/include/scripteditor.h \
+	/home/nakss_mef/script-editor/src/customtextedit.cpp \
 	/home/nakss_mef/script-editor/src/main.cpp \
 	/home/nakss_mef/script-editor/src/scripteditor.cpp \
 	/usr/include/alloca.h \
@@ -476,8 +478,7 @@ ScriptEditor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qxptype_traits.h \
 	/usr/include/qt6/QtCore/qyieldcpu.h \
 	/usr/include/qt6/QtGui/QAction \
-	/usr/include/qt6/QtGui/QShortcut \
-	/usr/include/qt6/QtGui/QShowEvent \
+	/usr/include/qt6/QtGui/QKeyEvent \
 	/usr/include/qt6/QtGui/QTransform \
 	/usr/include/qt6/QtGui/qaction.h \
 	/usr/include/qt6/QtGui/qbitmap.h \
@@ -509,7 +510,6 @@ ScriptEditor_autogen/timestamp: \
 	/usr/include/qt6/QtGui/qrgba64.h \
 	/usr/include/qt6/QtGui/qscreen.h \
 	/usr/include/qt6/QtGui/qscreen_platform.h \
-	/usr/include/qt6/QtGui/qshortcut.h \
 	/usr/include/qt6/QtGui/qtextcursor.h \
 	/usr/include/qt6/QtGui/qtextdocument.h \
 	/usr/include/qt6/QtGui/qtextformat.h \
@@ -530,6 +530,7 @@ ScriptEditor_autogen/timestamp: \
 	/usr/include/qt6/QtWidgets/QStatusBar \
 	/usr/include/qt6/QtWidgets/QTextEdit \
 	/usr/include/qt6/QtWidgets/QToolBar \
+	/usr/include/qt6/QtWidgets/QWidget \
 	/usr/include/qt6/QtWidgets/qabstractscrollarea.h \
 	/usr/include/qt6/QtWidgets/qapplication.h \
 	/usr/include/qt6/QtWidgets/qdialog.h \

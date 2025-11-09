@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "ScriptEditor_autogen"
   "CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o"
+  "CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o.d"
   "CMakeFiles/ScriptEditor.dir/src/main.cpp.o"
   "CMakeFiles/ScriptEditor.dir/src/main.cpp.o.d"
   "CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o"

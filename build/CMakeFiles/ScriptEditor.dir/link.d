@@ -5,6 +5,7 @@ ScriptEditor: \
   CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o \
   CMakeFiles/ScriptEditor.dir/src/main.cpp.o \
   CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o \
+  CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o \
   /usr/lib/libQt6Widgets.so.6.10.0 \
   /usr/lib/libQt6Gui.so.6.10.0 \
   /usr/lib/libGLX.so \
@@ -81,6 +82,8 @@ CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o:
 CMakeFiles/ScriptEditor.dir/src/main.cpp.o:
 
 CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o:
+
+CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o:
 
 /usr/lib/libQt6Widgets.so.6.10.0:
 

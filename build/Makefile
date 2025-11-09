@@ -186,6 +186,30 @@ ScriptEditor_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.s
 .PHONY : ScriptEditor_autogen/mocs_compilation.cpp.s
 
+src/customtextedit.o: src/customtextedit.cpp.o
+.PHONY : src/customtextedit.o
+
+# target to build an object file
+src/customtextedit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o
+.PHONY : src/customtextedit.cpp.o
+
+src/customtextedit.i: src/customtextedit.cpp.i
+.PHONY : src/customtextedit.i
+
+# target to preprocess a source file
+src/customtextedit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.i
+.PHONY : src/customtextedit.cpp.i
+
+src/customtextedit.s: src/customtextedit.cpp.s
+.PHONY : src/customtextedit.s
+
+# target to generate assembly for a file
+src/customtextedit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.s
+.PHONY : src/customtextedit.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -249,6 +273,9 @@ help:
 	@echo "... ScriptEditor_autogen/mocs_compilation.o"
 	@echo "... ScriptEditor_autogen/mocs_compilation.i"
 	@echo "... ScriptEditor_autogen/mocs_compilation.s"
+	@echo "... src/customtextedit.o"
+	@echo "... src/customtextedit.i"
+	@echo "... src/customtextedit.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

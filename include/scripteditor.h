@@ -23,19 +23,20 @@ public:
     ~ScriptEditor();
 
 public slots:
-    void NewFile();
-    void OpenFile();
-    void SaveFile();
-    void SaveAsFile();
-    void OnTextChanged();
-    void InsertTextMarker();
     void InsertAnimationMarker();
     void InsertEffectsMarcker();
     void InsertVideoMarker();
     void InsertImageMarker();
     void InsertAudioMarker();
+    void InsertTextMarker();
     void InsertNoteMarker();
+    void HandleTagClosing();
     void InsertGifMarker();
+    void OnTextChanged();
+    void SaveAsFile();
+    void OpenFile();
+    void SaveFile();
+    void NewFile();
 
 private:
     QToolBar* pMainToolBar;
@@ -68,6 +69,7 @@ private:
     bool SaveToFile(const QString& filePath);
     bool LoadFromFile(const QString& filePath);
     bool AskSave();
+    QTextCharFormat GetDefaultFormat();
 
 };
 

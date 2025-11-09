@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nakss_mef/script-editor/build/Desktop-Debug/ScriptEditor_autogen/mocs_compilation.cpp" "CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/ScriptEditor.dir/ScriptEditor_autogen/mocs_compilation.cpp.o.d"
+  "/home/nakss_mef/script-editor/src/customtextedit.cpp" "CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o" "gcc" "CMakeFiles/ScriptEditor.dir/src/customtextedit.cpp.o.d"
   "/home/nakss_mef/script-editor/src/main.cpp" "CMakeFiles/ScriptEditor.dir/src/main.cpp.o" "gcc" "CMakeFiles/ScriptEditor.dir/src/main.cpp.o.d"
   "/home/nakss_mef/script-editor/src/scripteditor.cpp" "CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o" "gcc" "CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o.d"
   "" "ScriptEditor" "gcc" "CMakeFiles/ScriptEditor.dir/link.d"

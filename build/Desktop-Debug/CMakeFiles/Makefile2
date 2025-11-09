@@ -88,12 +88,12 @@ CMakeFiles/ScriptEditor.dir/all: CMakeFiles/ScriptEditor_autogen_timestamp_deps.
 CMakeFiles/ScriptEditor.dir/all: CMakeFiles/ScriptEditor_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=1,2,3,4 "Built target ScriptEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target ScriptEditor"
 .PHONY : CMakeFiles/ScriptEditor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ScriptEditor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ScriptEditor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles 0
 .PHONY : CMakeFiles/ScriptEditor.dir/rule
@@ -105,7 +105,7 @@ ScriptEditor: CMakeFiles/ScriptEditor.dir/rule
 # codegen rule for target.
 CMakeFiles/ScriptEditor.dir/codegen: CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor.dir/build.make CMakeFiles/ScriptEditor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target ScriptEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target ScriptEditor"
 .PHONY : CMakeFiles/ScriptEditor.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir/clean:
 CMakeFiles/ScriptEditor_autogen.dir/all: CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor_autogen.dir/build.make CMakeFiles/ScriptEditor_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor_autogen.dir/build.make CMakeFiles/ScriptEditor_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=5 "Built target ScriptEditor_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=6 "Built target ScriptEditor_autogen"
 .PHONY : CMakeFiles/ScriptEditor_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ ScriptEditor_autogen: CMakeFiles/ScriptEditor_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/ScriptEditor_autogen.dir/codegen: CMakeFiles/ScriptEditor_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ScriptEditor_autogen.dir/build.make CMakeFiles/ScriptEditor_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=5 "Finished codegen for target ScriptEditor_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles --progress-num=6 "Finished codegen for target ScriptEditor_autogen"
 .PHONY : CMakeFiles/ScriptEditor_autogen.dir/codegen
 
 # clean rule for target.

@@ -419,7 +419,23 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/qt6/QtWidgets/qdialogbuttonbox.h \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
- /usr/include/qt6/QtGui/QShowEvent /usr/include/qt6/QtGui/qevent.h \
+ /usr/include/qt6/QtWidgets/QTextEdit \
+ /usr/include/qt6/QtWidgets/qtextedit.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/qframe.h \
+ /usr/include/qt6/QtGui/qtextdocument.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
+ /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtWidgets/QToolBar \
+ /usr/include/qt6/QtWidgets/qtoolbar.h \
+ /usr/include/qt6/QtWidgets/QMenuBar \
+ /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtGui/QAction /usr/include/qt6/QtGui/qaction.h \
+ /usr/include/qt6/QtCore/QStack /usr/include/qt6/QtCore/qstack.h \
+ /usr/include/qt6/QtWidgets/QMenu /usr/include/qt6/QtWidgets/qmenu.h \
+ /home/nakss_mef/script-editor/include/customtextedit.h \
+ /usr/include/qt6/QtGui/QKeyEvent /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
  /usr/include/qt6/QtGui/qvectornd.h \
  /usr/include/qt6/QtGui/qpointingdevice.h \
@@ -431,20 +447,4 @@ CMakeFiles/ScriptEditor.dir/src/scripteditor.cpp.o: \
  /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
  /usr/include/qt6/QtGui/qtransform.h \
  /usr/include/qt6/QtGui/qscreen_platform.h \
- /usr/include/qt6/QtWidgets/QTextEdit \
- /usr/include/qt6/QtWidgets/qtextedit.h \
- /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt6/QtWidgets/qframe.h \
- /usr/include/qt6/QtGui/qtextdocument.h \
- /usr/include/qt6/QtGui/qtextoption.h \
- /usr/include/qt6/QtGui/qtextcursor.h \
- /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/QShortcut /usr/include/qt6/QtGui/qshortcut.h \
- /usr/include/qt6/QtWidgets/QToolBar \
- /usr/include/qt6/QtWidgets/qtoolbar.h \
- /usr/include/qt6/QtWidgets/QMenuBar \
- /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h \
- /usr/include/qt6/QtGui/QAction /usr/include/qt6/QtGui/qaction.h \
- /usr/include/qt6/QtCore/QStack /usr/include/qt6/QtCore/qstack.h \
- /usr/include/qt6/QtWidgets/QMenu /usr/include/qt6/QtWidgets/qmenu.h \
- /usr/include/qt6/QtCore/QDebug /usr/include/qt6/QtCore/qdebug.h
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h

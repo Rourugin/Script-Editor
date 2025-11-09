@@ -1,5 +1,5 @@
 #include "scripteditor.h"
-#include <QDebug>
+#include "customtextedit.h"
 
 
 ScriptEditor::ScriptEditor(QWidget *parent) : QMainWindow(parent)
@@ -17,7 +17,7 @@ ScriptEditor::~ScriptEditor() {}
 
 void ScriptEditor::SetupUI()
 {
-    pTextEdit = new QTextEdit(this);
+    pTextEdit = new CustomTextEdit(this);
     setCentralWidget(pTextEdit);
     setWindowTitle("Script Editor[*]");
     resize(800, 600);
@@ -71,6 +71,7 @@ void ScriptEditor::SetupFormatting()
     //general
     QTextCharFormat GeneralFormat;
     GeneralFormat.setBackground(QColor());
+    GeneralFormat.setFontWeight(QFont::Normal);
     textFormats["general"] = GeneralFormat;
     openTags.push("general");
 }
@@ -105,6 +106,7 @@ void ScriptEditor::CreateActions()
     pNewFileAction->setShortcut(QKeySequence(Qt::CTRL | Qt::Key_A));
 
     connect(pAnimationMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertAnimationMarker);
+    connect(static_cast<CustomTextEdit*>(pTextEdit), &CustomTextEdit::CloseTagRequested, this, &ScriptEditor::HandleTagClosing);
     connect(pEffectMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertEffectsMarcker);
     connect(pVideoMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertVideoMarker);
     connect(pAudioMarkerAction, &QAction::triggered, this, &ScriptEditor::InsertAudioMarker);
@@ -267,6 +269,41 @@ bool ScriptEditor::LoadFromFile(const QString& filePath)
     }
 
     return false;
+}
+
+void ScriptEditor::HandleTagClosing()
+{
+    if (openTags.isEmpty() == false && openTags.top() != "general")
+    {
+        QString currentTag = openTags.pop();
+        QTextCharFormat newFormat;
+        if (openTags.isEmpty() == false)
+        {
+            QString previousTag = openTags.top();
+            newFormat = textFormats[previousTag];
+        }
+        else if (openTags.isEmpty() == true)
+        {
+            newFormat = GetDefaultFormat();
+        }
+        QTextCursor cursor = pTextEdit->textCursor();
+        cursor.insertText("]", textFormats[currentTag]);
+        pTextEdit->setCurrentCharFormat(newFormat);
+        CheckNestingLevel();
+    }
+    else if (openTags.isEmpty() == true || openTags.top() == "general")
+    {
+        QTextCursor cursor = pTextEdit->textCursor();
+        cursor.insertText("]");
+    }
+}
+
+QTextCharFormat ScriptEditor::GetDefaultFormat()
+{
+    QTextCharFormat defaultText;
+    defaultText.setBackground(QColor());
+    defaultText.setFontWeight(QFont::Normal);
+    return defaultText;
 }
 
 void ScriptEditor::OnTextChanged()

@@ -6,7 +6,9 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
   CMakeFiles/4.1.2/CMakeCXXCompiler.cmake \
   CMakeFiles/4.1.2/CMakeSystem.cmake \
   ScriptEditor_autogen/moc_predefs.h \
+  /home/nakss_mef/script-editor/include/customtextedit.h \
   /home/nakss_mef/script-editor/include/scripteditor.h \
+  /home/nakss_mef/script-editor/src/customtextedit.cpp \
   /home/nakss_mef/script-editor/src/main.cpp \
   /home/nakss_mef/script-editor/src/scripteditor.cpp \
   /usr/bin/cmake \
@@ -479,8 +481,7 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QAction \
-  /usr/include/qt6/QtGui/QShortcut \
-  /usr/include/qt6/QtGui/QShowEvent \
+  /usr/include/qt6/QtGui/QKeyEvent \
   /usr/include/qt6/QtGui/QTransform \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
@@ -512,7 +513,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
   /usr/include/qt6/QtGui/qrgba64.h \
   /usr/include/qt6/QtGui/qscreen.h \
   /usr/include/qt6/QtGui/qscreen_platform.h \
-  /usr/include/qt6/QtGui/qshortcut.h \
   /usr/include/qt6/QtGui/qtextcursor.h \
   /usr/include/qt6/QtGui/qtextdocument.h \
   /usr/include/qt6/QtGui/qtextformat.h \
@@ -533,6 +533,7 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
   /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/QTextEdit \
   /usr/include/qt6/QtWidgets/QToolBar \
+  /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/qt6/QtWidgets/qapplication.h \
   /usr/include/qt6/QtWidgets/qdialog.h \
@@ -1163,8 +1164,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
 
-/usr/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
-
 /usr/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake:
 
 /usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
@@ -1345,6 +1344,8 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/endian.h:
 
+/usr/include/qt6/QtCore/qstringbuilder.h:
+
 /usr/include/qt6/QtGui/qregion.h:
 
 /usr/include/c++/15.2.1/list:
@@ -1403,15 +1404,15 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/c++/15.2.1/bits/ranges_util.h:
 
-/usr/include/c++/15.2.1/bits/basic_string.h:
-
-/usr/include/asm-generic/types.h:
-
 /usr/lib/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake:
 
 /usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
 
 /usr/include/c++/15.2.1/bits/stl_heap.h:
+
+/usr/include/c++/15.2.1/bits/basic_string.h:
+
+/usr/include/asm-generic/types.h:
 
 /usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
@@ -1519,9 +1520,9 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/c++/15.2.1/limits:
 
-/usr/include/c++/15.2.1/bits/stl_construct.h:
-
 /usr/include/bits/struct_mutex.h:
+
+/usr/include/c++/15.2.1/bits/stl_construct.h:
 
 /usr/include/linux/types.h:
 
@@ -1563,8 +1564,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/qt6/QtCore/qhashfunctions.h:
 
-/usr/include/qt6/QtGui/qshortcut.h:
-
 /usr/include/c++/15.2.1/ext/concurrence.h:
 
 /usr/include/c++/15.2.1/cctype:
@@ -1574,6 +1573,12 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
 
 /usr/include/qt6/QtCore/qtcore-config.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/include/qt6/QtWidgets/qmenubar.h:
+
+/usr/include/c++/15.2.1/bits/stl_relops.h:
 
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
@@ -1586,6 +1591,14 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake:
 
 /usr/include/c++/15.2.1/vector:
+
+/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
+
+/usr/include/c++/15.2.1/bits/erase_if.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -1629,16 +1642,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/bits/syscall.h:
 
-/usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
-
-/usr/include/c++/15.2.1/debug/debug.h:
-
-/usr/include/c++/15.2.1/bits/align.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/15.2.1/ios:
-
 /usr/include/c++/15.2.1/bits/vector.tcc:
 
 /usr/include/c++/15.2.1/tuple:
@@ -1661,6 +1664,8 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
+/usr/include/qt6/QtCore/qsharedpointer_impl.h:
+
 /usr/include/bits/setjmp.h:
 
 /usr/include/qt6/QtCore/qstack.h:
@@ -1673,16 +1678,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/bits/waitstatus.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
-
-/usr/include/c++/15.2.1/iterator:
-
 /usr/include/c++/15.2.1/bits/atomic_wait.h:
 
 /usr/include/qt6/QtCore/qline.h:
@@ -1691,24 +1686,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 
 /usr/include/c++/15.2.1/bits/ostream.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/15.2.1/bits/stl_vector.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/c++/15.2.1/compare:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
-
-/usr/include/c++/15.2.1/cwctype:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/c++/15.2.1/bits/locale_facets.tcc:
-
 /usr/include/c++/15.2.1/bits/stl_map.h:
 
 /usr/include/asm-generic/posix_types.h:
@@ -1716,32 +1693,6 @@ ScriptEditor_autogen/timestamp: /home/nakss_mef/script-editor/CMakeLists.txt \
 /usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
 /usr/include/bits/byteswap.h:
-
-/usr/include/c++/15.2.1/bits/quoted_string.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/qt6/QtCore/q17memory.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/include/c++/15.2.1/bits/functexcept.h:
-
-/usr/include/c++/15.2.1/cmath:
-
-/usr/include/c++/15.2.1/bits/stringfwd.h:
-
-/usr/include/c++/15.2.1/bits/nested_exception.h:
-
-/usr/include/qt6/QtCore/qstringfwd.h:
-
-/usr/share/cmake/Modules/GNUInstallDirs.cmake:
-
-/home/nakss_mef/script-editor/include/scripteditor.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
 
 /usr/include/qt6/QtGui/qcursor.h:
 
@@ -1767,7 +1718,17 @@ CMakeFiles/4.1.2/CMakeSystem.cmake:
 
 /usr/include/qt6/QtWidgets/QMenuBar:
 
-/usr/include/c++/15.2.1/memory:
+/usr/include/c++/15.2.1/bits/locale_facets_nonio.h:
+
+/usr/include/syscall.h:
+
+/usr/include/qt6/QtCore/qswap.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/qt6/QtCore/qlist.h:
+
+/usr/include/c++/15.2.1/bit:
 
 /usr/share/cmake/Modules/CheckIncludeFile.cmake:
 
@@ -1787,29 +1748,67 @@ CMakeFiles/4.1.2/CMakeSystem.cmake:
 
 /usr/include/asm/types.h:
 
+/home/nakss_mef/script-editor/src/customtextedit.cpp:
+
 /usr/include/qt6/QtWidgets/qtwidgets-config.h:
 
 CMakeFiles/4.1.2/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qpoint.h:
 
+/usr/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
+
+/home/nakss_mef/script-editor/include/customtextedit.h:
+
+/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
+
+/usr/include/c++/15.2.1/bits/stl_pair.h:
+
 /usr/lib/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake:
 
 CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
-/usr/include/qt6/QtCore/qsharedpointer_impl.h:
+/usr/lib/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake:
 
-/usr/include/c++/15.2.1/bits/locale_facets_nonio.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/syscall.h:
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake:
 
-/usr/include/qt6/QtCore/qswap.h:
+/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
 
-/usr/include/c++/15.2.1/bit:
+/usr/include/c++/15.2.1/iterator:
 
-/usr/include/bits/uintn-identity.h:
+/usr/include/c++/15.2.1/cmath:
 
-/usr/include/qt6/QtCore/qlist.h:
+/usr/include/c++/15.2.1/bits/stringfwd.h:
+
+/usr/include/c++/15.2.1/bits/nested_exception.h:
+
+/usr/include/qt6/QtCore/qstringfwd.h:
+
+/usr/share/cmake/Modules/GNUInstallDirs.cmake:
+
+/home/nakss_mef/script-editor/include/scripteditor.h:
+
+/usr/include/c++/15.2.1/bits/quoted_string.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/qt6/QtCore/q17memory.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake:
+
+/usr/include/c++/15.2.1/bits/functexcept.h:
+
+/usr/include/c++/15.2.1/bits/align.h:
+
+/usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
+
+/usr/include/c++/15.2.1/debug/debug.h:
+
+/usr/include/c++/15.2.1/ios:
+
+/usr/include/bits/thread-shared-types.h:
 
 /usr/include/qt6/QtCore/qscopedpointer.h:
 
@@ -1818,6 +1817,26 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 /usr/include/c++/15.2.1/bits/invoke.h:
 
 /usr/include/bits/endian.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-relwithdebinfo.cmake:
+
+/usr/include/c++/15.2.1/bits/stl_vector.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/c++/15.2.1/compare:
+
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
+
+/usr/include/c++/15.2.1/cwctype:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/c++/15.2.1/bits/locale_facets.tcc:
+
+/usr/include/bits/posix1_lim.h:
 
 /home/nakss_mef/script-editor/src/scripteditor.cpp:
 
@@ -1965,10 +1984,6 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
-
-/usr/include/c++/15.2.1/bits/stl_pair.h:
-
 /usr/include/bits/waitflags.h:
 
 /usr/include/qt6/QtCore/qcompilerdetection.h:
@@ -2045,6 +2060,8 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
 /usr/include/bits/wctype-wchar.h:
 
+/usr/include/bits/wordsize.h:
+
 /usr/include/c++/15.2.1/bits/postypes.h:
 
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
@@ -2054,12 +2071,6 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
 
 /usr/include/c++/15.2.1/algorithm:
-
-/usr/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
-
-/usr/include/c++/15.2.1/bits/erase_if.h:
 
 /usr/include/c++/15.2.1/backward/auto_ptr.h:
 
@@ -2085,12 +2096,6 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/15.2.1/cerrno:
 
-/usr/lib/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/15.2.1/bits/stl_relops.h:
-
-/usr/include/qt6/QtWidgets/qmenubar.h:
-
 /usr/include/c++/15.2.1/bits/basic_ios.tcc:
 
 /usr/include/qt6/QtCore/qstringconverter.h:
@@ -2103,7 +2108,7 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
 /usr/include/qt6/QtWidgets/QMainWindow:
 
-/usr/include/bits/wordsize.h:
+/usr/include/c++/15.2.1/memory:
 
 /usr/include/c++/15.2.1/map:
 
@@ -2165,10 +2170,6 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/15.2.1/tr1/special_function_util.h:
 
-/usr/include/qt6/QtCore/qstringbuilder.h:
-
-/usr/include/qt6/QtGui/QShortcut:
-
 /usr/include/c++/15.2.1/type_traits:
 
 /usr/include/c++/15.2.1/bits/specfun.h:
@@ -2196,6 +2197,8 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/qt6/QtCore/qmetatype.h:
+
+/usr/include/qt6/QtWidgets/QWidget:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
@@ -2250,8 +2253,6 @@ CMakeFiles/4.1.2/CMakeCCompiler.cmake:
 /usr/include/qt6/QtCore/qutf8stringview.h:
 
 /usr/include/linux/errno.h:
-
-/usr/include/qt6/QtGui/QShowEvent:
 
 /usr/include/linux/limits.h:
 
@@ -2586,6 +2587,8 @@ ScriptEditor_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake:
 
 /usr/include/qt6/QtGui/QAction:
+
+/usr/include/qt6/QtGui/QKeyEvent:
 
 /home/nakss_mef/script-editor/src/main.cpp:
 

@@ -447,6 +447,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/nakss_mef/script-editor/include/customtextedit.h",
+			"MU",
+			"6YEA5652QU/moc_customtextedit.cpp",
+			null
+		],
+		[
 			"/home/nakss_mef/script-editor/include/scripteditor.h",
 			"MU",
 			"6YEA5652QU/moc_scripteditor.cpp",
@@ -514,6 +520,7 @@
 	"SETTINGS_FILE" : "/home/nakss_mef/script-editor/build/Desktop-Debug/CMakeFiles/ScriptEditor_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/nakss_mef/script-editor/src/customtextedit.cpp", "MU", null ],
 		[ "/home/nakss_mef/script-editor/src/main.cpp", "MU", null ],
 		[ "/home/nakss_mef/script-editor/src/scripteditor.cpp", "MU", null ]
 	],

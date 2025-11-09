@@ -21,10 +21,12 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 set(SOURCES
     src/main.cpp
     src/scripteditor.cpp
+    src/customtextedit.cpp
 )
 
 set(HEADERS
     include/scripteditor.h
+    include/customtextedit.h
 )
 
 #make execut file
